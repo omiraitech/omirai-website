@@ -9,7 +9,7 @@
 @section('body')
     <!--hero start-->
     <section class="jarallax py-9 hero-agency" data-jarallax data-speed="0.4">
-        <img class="jarallax-img" src="assets/images/landings/agency/agency-hero-img.jpg" alt="agency" />
+        <video src="{{ asset('assets/images/hero/hero-vid.mp4') }}" class="jarallax-img" muted loop autoplay></video>
         <div class="position-absolute start-0 end-0">
             <div class="container">
                 <div class="row">
@@ -23,7 +23,7 @@
                                     business processes and growth.</p>
                             </div>
 
-                            <a href="#!" class="btn btn-primary">Start project</a>
+                            <a href="#letstalk" class="btn btn-primary">Start project</a>
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,8 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div data-cue="zoomIn">
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a href="portfolio-single.html">
-                                    <img src="assets/images/portfolio/portfolio-img-1.jpg" alt="Logo CODEN "
+                                <a href="/portfolio/coden">
+                                    <img src="{{ asset('assets/images/portfolio/coden.png') }}" alt="CODEN Logo"
                                         class="img-fluid rounded-3" />
 
                                     <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
@@ -64,7 +64,7 @@
                             </figure>
 
                             <h2 class="lh-base h4">
-                                <a href="portfolio-single.html" class="text-reset">CODEN</a>
+                                <a href="/portfolio/coden" class="text-reset">CODEN</a>
                             </h2>
                             <p class="mb-0 text-body-tertiary fw-medium">Business Processes Optimization</p>
                         </div>
@@ -72,8 +72,8 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div data-cue="zoomIn">
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a href="portfolio-single.html">
-                                    <img src="assets/images/portfolio/portfolio-img-2.png" alt="Logo Cassie-Hub"
+                                <a href="/portfolio/cassie-hub">
+                                    <img src="{{ asset('assets/images/portfolio/cassie-hub.png') }}" alt="Cassie Hub Logo"
                                         class="img-fluid rounded-3" />
                                     <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
                                         <i class="bi bi-arrow-up-right"></i>
@@ -82,7 +82,7 @@
                             </figure>
 
                             <h2 class="lh-base h4">
-                                <a href="portfolio-single.html" class="text-reset">Cassie-Hub</a>
+                                <a href="/portfolio/cassie-hub" class="text-reset">Cassie Hub</a>
                             </h2>
                             <p class="mb-0 text-body-tertiary fw-medium">E-Commerce</p>
                         </div>
@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-lg-12" data-cue="fadeIn">
                     <div class="text-center my-5">
-                        <a href="#" class="btn btn-primary">Read case studies</a>
+                        <a href="{{ route('portfolio') }}" class="btn btn-primary">Read case studies</a>
                     </div>
                 </div>
             </div>
@@ -133,10 +133,12 @@
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
                                         <h3>AI Solutions and Integration</h3>
-                                        <p class="mb-0">We understand that every business is unique. That's why we work closely with our clients to develop tailor-made AI solutions that address their specific challenges and objectives.</p>
+                                        <p class="mb-0">We understand that every business is unique. That's why we work
+                                            closely with our clients to develop tailor-made AI solutions that address their
+                                            specific challenges and objectives.</p>
                                     </div>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <a href="{{ route('solutions') }}" class="icon-link icon-link-hover">
                                         Learn More
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -165,11 +167,12 @@
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
                                         <h3>Mobile and Web Development</h3>
-                                        <p class="mb-0">Our dedicated team uses modern tech stack to create solutions  designed to scale with your business.
+                                        <p class="mb-0">Our dedicated team uses modern tech stack to create solutions
+                                            designed to scale with your business.
                                         </p>
                                     </div>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <a href="{{ route('portfolio') }}" class="icon-link icon-link-hover">
                                         Learn More
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -198,7 +201,8 @@
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
                                         <h3>Trainings</h3>
-                                        <p class="mb-0">We provide a variety of trainings to help stay updated with the latest trends in the industry.</p>
+                                        <p class="mb-0">We provide a variety of trainings to help stay updated with the
+                                            latest trends in the industry.</p>
                                     </div>
 
                                     <a href="#!" class="icon-link icon-link-hover">
@@ -231,7 +235,9 @@
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
                                         <h3>Business Development and Consultancy</h3>
-                                        <p class="mb-0">Innovation is in our DNA. Our dedicated  business development team consistently explores new avenues to bring groundbreaking solutions to our clients to help them grow.
+                                        <p class="mb-0">Innovation is in our DNA. Our dedicated business development team
+                                            consistently explores new avenues to bring groundbreaking solutions to our
+                                            clients to help them grow.
                                         </p>
                                     </div>
 
@@ -265,7 +271,9 @@
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
                                         <h3>Data Science and Data Analysis</h3>
-                                        <p class="mb-0">We use the latest advancements in AI development to unlock valuable insights from data, in order to provide state-of-the-art solutions that give our clients a competitive edge .
+                                        <p class="mb-0">We use the latest advancements in AI development to unlock
+                                            valuable insights from data, in order to provide state-of-the-art solutions that
+                                            give our clients a competitive edge .
                                         </p>
                                     </div>
 
@@ -307,53 +315,53 @@
                     <div class="row row-cols-lg-5 row-cols-md-4 row-cols-2 justify-content-center g-5">
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/dinovix.svg" alt="logo Dinovix" />
+                                <img src="{{ asset('assets/images/brand-logo/dinovix.svg') }}" alt="Dinovix Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/coden.svg" alt="logo CODEN" />
+                                <img src="{{ asset('assets/images/brand-logo/coden.svg') }}" alt="CODEN Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/cassie-hub.svg" alt="logo Cassie-Hub" />
+                                <img src="{{ asset('assets/images/brand-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/copressa.svg" alt="logo COPRESSA" />
+                                <img src="{{ asset('assets/images/brand-logo/copressa.svg') }}" alt="COPRESSA Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/saurellenyoma.svg" alt="logo Saurelle Nyoma" />
+                                <img src="{{ asset('assets/images/brand-logo/saurellenyoma.svg') }}" alt="Saurelle Nyoma Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/djasportsacademy.svg" alt="logo Dja Sports Academy" />
+                                <img src="{{ asset('assets/images/brand-logo/djasportsacademy.svg') }}" alt="Dja Sports Academy Logo " />
                             </figure>
                         </div>
 
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/target.svg" alt="logo Target" />
+                                <img src="{{ asset('assets/images/brand-logo/target.svg') }}" alt="Target Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/snicom.svg" alt="logo Snicom" />
+                                <img src="{{ asset('assets/images/brand-logo/snicom.svg') }}" alt="Snicom Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/sophistique-by-us.svg" alt="logo Sophistiqué By Us" />
+                                <img src="{{ asset('assets/images/brand-logo/sophistique-by-us.svg') }}" alt="Sophistiqué By Us Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="assets/images/brand-logo/brand-logo-10.svg" alt="logo" />
+                                <img src="{{ asset('assets/images/brand-logo/guimma.svg') }}" alt="Guimma Logo " />
                             </figure>
                         </div>
                     </div>
@@ -371,11 +379,15 @@
                     <div class="mb-4">
                         <small class="text-uppercase ls-md fw-semibold">who we are</small>
                         <h2 class="h1 mt-4 mb-3">Believes in the power of creative strategy.</h2>
-                        <p class="mb-3">We are an AI tech company that provides cutting edge technologies, solutions and services to drive positive change, enhance efficiency, optimize business processes and growth .</p>
-                        <p class="mb-0">Our solutions are designed to scale with your business. Whether you're an individual, startup or an enterprise, our flexible architecture ensures seamless integration and adaptability to evolving needs.</p>
+                        <p class="mb-3">We are an AI tech company that provides cutting edge technologies, solutions and
+                            services to drive positive change, enhance efficiency, optimize business processes and growth .
+                        </p>
+                        <p class="mb-0">Our solutions are designed to scale with your business. Whether you're an
+                            individual, startup or an enterprise, our flexible architecture ensures seamless integration and
+                            adaptability to evolving needs.</p>
                     </div>
 
-                    <a href="about.html" class="icon-link icon-link-hover">
+                    <a href="{{ route('about_us') }}" class="icon-link icon-link-hover">
                         More about us
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                             class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -386,22 +398,17 @@
                 </div>
                 <div class="col-xl-6 offset-xl-1 col-lg-6 col-12">
                     <div class="row g-4" data-cues="slideInUp" data-delay="1000">
-                        <div class="col-lg-6 col-md-6 col-12">
+                         <div class="col-lg-6 col-md-6 col-12">
                             <a href="#!">
                                 <div class="rounded-3 card-lift"
-                                    style="background-image: url(assets/images/about-img/about-grid-img-2.jpg); background-repeat: no-repeat; height: 386px; background-size: cover">
+                                    style="background-image: url(assets/images/about-img/omirai.png); background-repeat: no-repeat; height: 386px; background-size: cover">
                                 </div>
                             </a>
-                        </div>
+                        </div> 
                         <div class="col-lg-6 col-md-6 col-12">
                             <a href="#!">
                                 <div class="mb-4 rounded-3 card-lift"
-                                    style="background-image: url(assets/images/about-img/about-grid-img-1.jpg); background-repeat: no-repeat; height: 180px; background-size: cover">
-                                </div>
-                            </a>
-                            <a href="#!">
-                                <div class="mb-2 rounded-3 card-lift"
-                                    style="background-image: url(assets/images/about-img/about-grid-img-3.jpg); background-repeat: no-repeat; height: 180px; background-size: cover">
+                                    style="background-image: url(assets/images/about-img/ohsa.png); background-repeat: no-repeat; height: 180px; background-size: cover">
                                 </div>
                             </a>
                         </div>
@@ -427,7 +434,7 @@
                         </div>
 
                         <h4>Expert team</h4>
-                        <p class="mb-0">Vivamus eget neque lacus. Pellentesque egauris ex.</p>
+                        <p class="mb-0">An expert team available to help you with your project.</p>
                     </div>
                 </div>
                 <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" data-cue="zoomIn">
@@ -440,22 +447,23 @@
                             </svg>
                         </div>
 
-                        <h4>Award winning agency</h4>
-                        <p class="mb-0">Lorem ipsum, dolor sit amet consectetur elitorceat .</p>
+                        <h4>Winning Strategies</h4>
+                        <p class="mb-0">Our solutions and strategies are meant to meet your needs and get you to the next
+                            level</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-cue="zoomIn">
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-stars text-primary" viewBox="0 0 16 16">
+                                class="bi bi-headset text-primary" viewBox="0 0 16 16">
                                 <path
-                                    d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
                             </svg>
                         </div>
 
-                        <h4>10 Year Exp.</h4>
-                        <p class="mb-0">Pellen tesque eget, mauris lorem iupsum neque lacus.</p>
+                        <h4>Customer Service</h4>
+                        <p class="mb-0">Dedicated customer service for your queries and follow up on the projects</p>
                     </div>
                 </div>
             </div>
@@ -463,115 +471,10 @@
     </section>
     <!--Expert team end-->
 
-    <!--Our articles start-->
-    <section class="my-xl-9 my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3" data-cue="fadeIn">
-                    <div class="text-center mb-xl-7 mb-5">
-                        <h2 class="h1 mb-3">Our Blog</h2>
-                        <p class="mb-0">Go through our blog to find interesting articles regarding tech and business growth</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog Card -->
-            <div class="table-responsive-lg">
-                <div class="row g-5 flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
-                    <article class="col-lg-4 col-md-6 col-12" data-cue="zoomIn">
-                        <figure class="mb-4 zoom-img">
-                            <a href="blog-single.html">
-                                <img src="assets/images/blog/blog-img-3.jpg" alt="blog"
-                                    class="img-fluid rounded-3" />
-                            </a>
-                        </figure>
 
-                        <a href="#!"
-                            class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">Startup</a>
-                        <h3 class="my-3 lh-base h4">
-                            <a href="blog-single.html" class="text-reset">You will destroy yourself financially if
-                                you save</a>
-                        </h3>
-                        <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/images/avatar/avatar-8.jpg" alt="Avatar"
-                                    class="avatar avatar-xs rounded-circle" />
-                                <div class="ms-2">
-                                    <a href="#" class="text-reset fs-6">Sandip Chauhan</a>
-                                </div>
-                            </div>
-                            <div class="ms-3"><span class="fs-6">Nov 26, 2023</span></div>
-                        </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 col-12" data-cue="zoomIn">
-                        <figure class="mb-4 zoom-img">
-                            <a href="blog-single.html">
-                                <img src="assets/images/blog/blog-img-5.jpg" alt="blog"
-                                    class="img-fluid rounded-3" />
-                            </a>
-                        </figure>
 
-                        <a href="#!"
-                            class="badge bg-warning-subtle text-warning-emphasis rounded-pill text-uppercase">Business</a>
-                        <h3 class="my-3 lh-base h4">
-                            <a href="blog-single.html" class="text-reset">Block Template for startup business</a>
-                        </h3>
-                        <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/images/avatar/avatar-6.jpg" alt="Avatar"
-                                    class="avatar avatar-xs rounded-circle" />
-                                <div class="ms-2">
-                                    <a href="#" class="text-reset fs-6">Anita Parmar</a>
-                                </div>
-                            </div>
-                            <div class="ms-3"><span class="fs-6">Nov 21, 2023</span></div>
-                        </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 col-12" data-cue="zoomIn">
-                        <figure class="mb-4 zoom-img">
-                            <a href="blog-single.html">
-                                <img src="assets/images/blog/blog-img-4.jpg" alt="blog"
-                                    class="img-fluid rounded-3" />
-                            </a>
-                        </figure>
-
-                        <a href="#!"
-                            class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">Digital</a>
-                        <h4 class="my-3 lh-base">
-                            <a href="blog-single.html" class="text-reset">The power of doing nothing at all</a>
-                        </h4>
-                        <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/images/avatar/avatar-4.jpg" alt="Avatar"
-                                    class="avatar avatar-xs rounded-circle" />
-                                <div class="ms-2">
-                                    <a href="#" class="text-reset fs-6">Jitu Chauhan</a>
-                                </div>
-                            </div>
-                            <div class="ms-3"><span class="fs-6">Nov 23, 2023</span></div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12" data-cue="zoomIn">
-                    <div class="mt-lg-8 mt-5">
-                        <a href="blog.html" class="icon-link icon-link-hover text-dark">
-                            Read more news
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Our articles end-->
-
-    <!--Hire jamstack start-->
-    <section class="pattern-square bg-info bg-opacity-10">
+    <!--Let's Talk start-->
+    <section class="pattern-square bg-info bg-opacity-10" id="letstalk">
         <div class="container position-relative z-1 py-xl-9 py-6">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12">
@@ -612,13 +515,15 @@
                                 <div class="d-md-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center mb-3 mb-md-0 small">
                                         <div class="d-flex align-items-center">
-                                            <img src="assets/images/avatar/avatar-7.jpg" alt="Avatar"
-                                                class="avatar avatar-lg rounded-circle" />
-                                            <div class="ms-3">
-                                                <h5 class="mb-0">Jitu Chauhan</h5>
-                                                <small class="me-4">Head of Sales</small>
-                                                <small>sales@blockui.com</small>
-                                            </div>
+                                            <a class="btn btn-success" href="http://wa.me/+237694113593" role="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+                                                    </path>
+                                                </svg>
+                                                Reach out to us through WhatsApp
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -678,5 +583,5 @@
             </div>
         </div>
     </section>
-    <!--Hire jamstack end-->
+    <!--Let's Talk end-->
 @endsection

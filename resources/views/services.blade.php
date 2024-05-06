@@ -29,21 +29,21 @@
     <section class="mb-xl-9 my-4">
         <div class="container">
             <div class="row g-7">
+                {{-- AI Solutions and Integration --}}
                 <div class="col-sm-6 col-md-6">
                     <div class>
                         <div class="position-relative mb-7">
-                            <img src="assets/images/service/service-img-wide-1.jpg" alt="wide"
+                            <img src="{{ asset('assets/images/service/service-img-1.png') }}" alt="Service 1 Image"
                                 class="rounded-3 img-fluid" />
                             <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" class="bi bi-vector-pen text-white-stable" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z" />
-                                        <path fill-rule="evenodd"
-                                            d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z" />
-                                    </svg>
+                                    
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-robot text-white-stable" viewBox="0 0 16 16">
+                                        <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+                                        <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+                                      </svg>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                             <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">AI/ML Solutions</span>
                         </div>
 
-                        <a href="#!" class="icon-link icon-link-hover">
+                        <a href="'{{route('solutions')}}" class="icon-link icon-link-hover">
                             View Solutions
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -70,11 +70,11 @@
                         </a>
                     </div>
                 </div>
-
+                {{-- Web Development --}}
                 <div class="col-sm-6 col-md-6">
                     <div class>
                         <div class="position-relative mb-7">
-                            <img src="assets/images/service/service-img-wide-2.jpg" alt="wide"
+                            <img src="{{ asset('assets/images/service/service-img-2.png') }}" alt="Service Image 2"
                                 class="rounded-3 img-fluid" />
                             <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
                                 <div
@@ -137,7 +137,7 @@
                             </ul>
                         </div>
 
-                        <a href="#!" class="icon-link icon-link-hover">
+                        <a href="{{route('portfolio')}}" class="icon-link icon-link-hover">
                             View Portfolio
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -148,10 +148,11 @@
                         </a>
                     </div>
                 </div>
+                {{-- eCommerce Development --}}
                 <div class="col-sm-6 col-md-6">
                     <div class>
                         <div class="position-relative mb-7">
-                            <img src="assets/images/service/service-img-wide-3.jpg" alt="wide"
+                            <img src="{{ asset('assets/images/service/service-img-3.png') }}" alt="Service Image 3"
                                 class="rounded-3 img-fluid" />
                             <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
                                 <div class="p-3 icon-xl icon-shape rounded bg-info border border-2 border-white ms-md-10">
@@ -184,25 +185,24 @@
                         <div class="row  rounded mx-1">
                             <div class="col-md-4 col-4">
                                 <figure class="text-center py-2">
-                                    <img src="assets/images/brand-logo/cassie-hub.svg" alt="logo Cassie-Hub"
+                                    <img src="{{ asset('assets/images/brand-logo/cassie-hub.svg') }}" alt="logo Cassie-Hub"
                                         class="mw-100" />
                                 </figure>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{-- Trainings --}}
                 <div class="col-sm-6 col-md-6">
                     <div class="position-relative mb-7">
-                        <img src="assets/images/service/service-img-wide-4.jpg" alt="wide"
+                        <img src="{{ asset('assets/images/service/service-img-4.png') }}" alt="Service Image 4"
                             class="rounded-3 img-fluid" />
                         <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
                             <div class="p-3 icon-xl icon-shape rounded bg-warning border border-2 border-white ms-md-10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    fill="currentColor" class="bi bi-phone text-white-stable" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mortarboard text-white-stable" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                                  </svg>
                             </div>
                         </div>
                     </div>
@@ -210,25 +210,8 @@
                     <div class="mb-5">
                         <h2 class="mb-3 h3">Trainings</h2>
                         <p class="mb-5">
-                            Mobile app development is the act or process by which a mobile app is developed for one or more
-                            mobile devices, which can include personal digital assistants, enterprise
-                            digital assistants, or mobile phones.
+                            Are you ready to elevate your skills, empower your team, and drive success in your organization? Look no further! Our tailored training solutions are designed to transform individuals and businesses, providing a roadmap to success in today's dynamic landscape.
                         </p>
-
-                        <div class="border-bottom d-flex pb-3 mb-3">
-                            <p class="mb-0">
-                                <span class="h5">Flutter :</span>
-                                Flutter is an open source framework by Google for building beautiful, natively compiled,
-                                multi-platform applications.
-                            </p>
-                        </div>
-                        <div class="border-bottom d-flex pb-3 mb-5">
-                            <p class="mb-0">
-                                <span class="h5">React Native :</span>
-                                React Native lets you create truly native apps and doesn't compromise your users'
-                                experiences.
-                            </p>
-                        </div>
 
                         <a href="#!" class="icon-link icon-link-hover">
                             View Trainings
@@ -241,18 +224,16 @@
                         </a>
                     </div>
                 </div>
+                {{-- Business Development and Consultancy --}}
                 <div class="col-sm-6 col-md-6">
                     <div class="position-relative mb-7">
-                        <img src="assets/images/service/service-img-wide-4.jpg" alt="wide"
+                        <img src="{{ asset('assets/images/service/service-img-5.png') }}" alt="Service Image 5"
                             class="rounded-3 img-fluid" />
                         <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
                             <div class="p-3 icon-xl icon-shape rounded bg-warning border border-2 border-white ms-md-10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    fill="currentColor" class="bi bi-phone text-white-stable" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow text-white-stable" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                                  </svg>
                             </div>
                         </div>
                     </div>
@@ -260,28 +241,11 @@
                     <div class="mb-5">
                         <h2 class="mb-3 h3">Business Development and Consultancy</h2>
                         <p class="mb-5">
-                            Mobile app development is the act or process by which a mobile app is developed for one or more
-                            mobile devices, which can include personal digital assistants, enterprise
-                            digital assistants, or mobile phones.
+                            We help in empowering businesses to achieve sustainable growth and success. With a team of seasoned professionals, we offer a comprehensive suite of strategic services designed to elevate your business to new heights.
                         </p>
 
-                        <div class="border-bottom d-flex pb-3 mb-3">
-                            <p class="mb-0">
-                                <span class="h5">Flutter :</span>
-                                Flutter is an open source framework by Google for building beautiful, natively compiled,
-                                multi-platform applications.
-                            </p>
-                        </div>
-                        <div class="border-bottom d-flex pb-3 mb-5">
-                            <p class="mb-0">
-                                <span class="h5">React Native :</span>
-                                React Native lets you create truly native apps and doesn't compromise your users'
-                                experiences.
-                            </p>
-                        </div>
-
                         <a href="#!" class="icon-link icon-link-hover">
-                            View Case Study
+                            Learn More
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -291,18 +255,16 @@
                         </a>
                     </div>
                 </div>
+                {{-- Data Science and Data Analysis --}}
                 <div class="col-sm-6 col-md-6">
                     <div class="position-relative mb-7">
-                        <img src="assets/images/service/service-img-wide-4.jpg" alt="wide"
+                        <img src="{{ asset('assets/images/service/service-img-6.png') }}" alt="Service Image 6"
                             class="rounded-3 img-fluid" />
                         <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
-                            <div class="p-3 icon-xl icon-shape rounded bg-warning border border-2 border-white ms-md-10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    fill="currentColor" class="bi bi-phone text-white-stable" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                </svg>
+                            <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bar-chart-line text-white-stable" viewBox="0 0 16 16">
+                                    <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z"/>
+                                  </svg>
                             </div>
                         </div>
                     </div>
@@ -310,28 +272,11 @@
                     <div class="mb-5">
                         <h2 class="mb-3 h3">Data Science and Data Analysis</h2>
                         <p class="mb-5">
-                            Mobile app development is the act or process by which a mobile app is developed for one or more
-                            mobile devices, which can include personal digital assistants, enterprise
-                            digital assistants, or mobile phones.
+                           We are committed to unlocking the full potential of data to drive informed decision-making and foster innovation. With a team of skilled data scientists and analysts, we offer comprehensive data solutions that transform raw information into actionable insights for businesses across diverse industries.
                         </p>
 
-                        <div class="border-bottom d-flex pb-3 mb-3">
-                            <p class="mb-0">
-                                <span class="h5">Flutter :</span>
-                                Flutter is an open source framework by Google for building beautiful, natively compiled,
-                                multi-platform applications.
-                            </p>
-                        </div>
-                        <div class="border-bottom d-flex pb-3 mb-5">
-                            <p class="mb-0">
-                                <span class="h5">React Native :</span>
-                                React Native lets you create truly native apps and doesn't compromise your users'
-                                experiences.
-                            </p>
-                        </div>
-
                         <a href="#!" class="icon-link icon-link-hover">
-                            View Case Study
+                            Learn More
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -360,7 +305,7 @@
                         </div>
                         <div class="col-lg-4 col-md-5">
                             <div class="text-center">
-                                <a href="#" class="btn btn-primary">Start by saying Hi..</a>
+                                <a href="{{route('contact_us')}}" class="btn btn-primary">Start by saying Hi..</a>
                             </div>
                         </div>
                     </div>

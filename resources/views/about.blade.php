@@ -11,10 +11,9 @@
               <div class="col-lg-6 col-md-12">
                  <div class="me-xl-8">
                     <h1 class="mb-3">Who we are</h1>
-                    <p class="lead mb-4">We help organizations achieve their most ambitious goals and move with greater agility.</p>
-                    <p class="mb-6 me-xl-6">
-                       With our next-generation app platform, teams easily design and deploy flexible and engaging apps that power critical workflows and make valuable data actionable across the
-                       enterprise.
+                    <p class="lead mb-4">We help entrepreneurs and business builders enhance efficiency, optimize business processes and growth</p>
+                    <p class="mb-6 me-xl-6" style="text-align: justify;">
+                     Our solutions are designed to scale with your business. Whether you're an individual, startup or an enterprise, our flexible architecture ensures seamless integration and adaptability to evolving needs.
                     </p>
                     <div class="row g-lg-3">
                        <div class="col-md-6">
@@ -26,7 +25,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Aenean eu leo quam ornare curabitur blandit tempus.</span>
+                                <span class="ms-2">Professional Team.</span>
                              </li>
                              <li class="d-flex">
                                 <span>
@@ -35,7 +34,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Lorem ipsum dolor sit amet consectetur.</span>
+                                <span class="ms-2">Quality Service and Strategies.</span>
                              </li>
                           </ul>
                        </div>
@@ -48,7 +47,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Consectetur dolor sit, amet sectetur adipisicing.</span>
+                                <span class="ms-2">Follow-up and Feedback.</span>
                              </li>
                              <li class="d-flex">
                                 <span>
@@ -57,7 +56,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Mollitia qui sit velit, facere, quasi quisquam unde.</span>
+                                <span class="ms-2">Cutting Edge Technologies.</span>
                              </li>
                           </ul>
                        </div>
@@ -66,7 +65,7 @@
               </div>
               <div class="col-lg-6 col-md-12">
                  <figure>
-                    <img src="assets/images/about-img/about-hero-img.jpg" alt="career" class="img-fluid rounded-3" />
+                    <img src="{{ asset('assets/images/about-img/about-hero-img.png') }}" alt="omirai logo" class="img-fluid rounded-3" />
                  </figure>
               </div>
            </div>
@@ -76,29 +75,54 @@
               <div class="swiper-wrapper mb-7">
                  <div class="swiper-slide">
                     <figure class="text-center mb-4 mb-lg-0">
-                       <img src="assets/images/client-logo/clients-logo-1.svg" alt="logo" />
+                       <img src="{{ asset('assets/images/client-logo/dinovix.svg') }}" alt="Dinovix Logo" />
                     </figure>
                  </div>
                  <div class="swiper-slide">
                     <figure class="text-center mb-4 mb-lg-0">
-                       <img src="assets/images/client-logo/clients-logo-2.svg" alt="logo" />
+                       <img src="{{ asset('assets/images/client-logo/coden.svg') }}" alt="CODEN Logo" />
                     </figure>
                  </div>
                  <div class="swiper-slide">
                     <figure class="text-center mb-4 mb-lg-0">
-                       <img src="assets/images/client-logo/clients-logo-3.svg" alt="logo" />
+                       <img src="{{ asset('assets/images/client-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo" />
                     </figure>
                  </div>
                  <div class="swiper-slide">
                     <figure class="text-center mb-4 mb-lg-0">
-                       <img src="assets/images/client-logo/clients-logo-4.svg" alt="logo" />
+                       <img src="{{ asset('assets/images/client-logo/copressa.svg') }}" alt="Copressa Logo" />
                     </figure>
                  </div>
                  <div class="swiper-slide">
                     <figure class="text-center mb-4 mb-lg-0">
-                       <img src="assets/images/client-logo/clients-logo-5.svg" alt="logo" />
+                       <img src="{{ asset('assets/images/client-logo/saurellenyoma.svg') }}" alt="Saurelle Nyoma Logo" />
                     </figure>
                  </div>
+                 <div class="swiper-slide">
+                  <figure class="text-center mb-4 mb-lg-0">
+                     <img src="{{ asset('assets/images/client-logo/djasportsacademy.svg') }}" alt="Dja Sports Academy Logo" />
+                  </figure>
+               </div>
+               <div class="swiper-slide">
+                  <figure class="text-center mb-4 mb-lg-0">
+                     <img src="{{ asset('assets/images/client-logo/target.svg') }}" alt="Target Entreprise Logo" />
+                  </figure>
+               </div>
+               <div class="swiper-slide">
+                  <figure class="text-center mb-4 mb-lg-0">
+                     <img src="{{ asset('assets/images/client-logo/snicom.svg') }}" alt="Snicom Hub Logo" />
+                  </figure>
+               </div>
+               <div class="swiper-slide">
+                  <figure class="text-center mb-4 mb-lg-0">
+                     <img src="{{ asset('assets/images/client-logo/sophistique-by-us.svg') }}" alt="Sophistiquée By Us Logo" />
+                  </figure>
+               </div>
+               <div class="swiper-slide">
+                  <figure class="text-center mb-4 mb-lg-0">
+                     <img src="{{ asset('assets/images/client-logo/guimma.svg') }}" alt="Guimma Logo" />
+                  </figure>
+               </div>
               </div>
               <div class="swiper-pagination"></div>
            </div>
@@ -128,7 +152,7 @@
                  </div>
 
                  <h4>Our Mission</h4>
-                 <p class="mb-0">With technology at our core, we build global infrastructure and applications to empower businesses to operate anywhere, anytime.</p>
+                 <p class="mb-0">With technology at our core, we build innovative solutions to empower businesses to operate anywhere, anytime.</p>
               </div>
               <div class="col-lg-4 col-md-4">
                  <div class="mb-5">
@@ -138,8 +162,8 @@
                     </svg>
                  </div>
 
-                 <h4>Our Visions</h4>
-                 <p class="mb-0">To be the global economic infrastructure to empower businesses of all sizes to grow without borders.</p>
+                 <h4>Our Vision</h4>
+                 <p class="mb-0">To be a reference tech company through its solutions that empower businesses of all sizes to grow without borders.</p>
               </div>
               <div class="col-lg-4 col-md-4">
                  <div class="mb-5">
@@ -152,7 +176,8 @@
                  </div>
 
                  <h4>Our Purpose</h4>
-                 <p class="mb-0">To connect the entrepreneurs, business builders, makers and creators with borderless opportunities in every corner of the world.</p>
+                 <p class="mb-0">To empower entrepreneurs and business builders with solutions that have an impact. Our tagline <b>Impacting Today, Changing Tommorow</b> says it all.
+                 </p>
               </div>
            </div>
         </div>
@@ -163,28 +188,22 @@
      <section class="py-lg-9 py-5 bg-primary">
         <div class="container">
            <div class="row g-5">
-              <div class="col-md-3 col-6">
+              <div class="col-md-4 col-6">
                  <div class="text-center">
-                    <h2 class="text-white-stable">2011</h2>
+                    <h2 class="text-white-stable">2022</h2>
                     <h5 class="text-white-stable mb-0">Founded</h5>
                  </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-4 col-6">
                  <div class="text-center">
-                    <h2 class="text-white-stable">425+</h2>
+                    <h2 class="text-white-stable">15+</h2>
                     <h5 class="text-white-stable mb-0">Projects Shipped</h5>
                  </div>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-4 col-6">
                  <div class="text-center">
-                    <h2 class="text-white-stable">55+</h2>
+                    <h2 class="text-white-stable">10+</h2>
                     <h5 class="text-white-stable mb-0">Team Members</h5>
-                 </div>
-              </div>
-              <div class="col-md-3 col-6">
-                 <div class="text-center">
-                    <h2 class="text-white-stable">4.9</h2>
-                    <h5 class="text-white-stable mb-0">Clutch Rating</h5>
                  </div>
               </div>
            </div>
@@ -199,14 +218,7 @@
               <div class="col-xl-8 offset-xl-2 col-md-8 offset-md-2">
                  <div class="text-center mx-xl-7 mb-5">
                     <h2 class="mb-3">Read the real-life success stories of the companies and industries.</h2>
-                    <a href="#!" class="icon-link icon-link-hover fw-semicold">
-                       Browse all customer stories
-                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                          <path
-                             fill-rule="evenodd"
-                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                       </svg>
-                    </a>
+                    
                  </div>
               </div>
            </div>
@@ -216,14 +228,14 @@
                     <div class="card shadow-sm h-100">
                        <div class="card-body p-lg-5">
                           <figure class="mb-5">
-                             <img src="assets/images/client-logo/clients-logo-2.svg" alt="logo" />
+                             <img src="{{ asset('assets/images/client-logo/coden.svg') }}" alt="CODEN Logo" />
                           </figure>
-                          <p class="mb-0">
-                             “Lorem ipsum dolor sit amet cons ectetur adipiscing elit uisque sagittis risus sed dolor lobortis, non rutrum massa ultricies aecenas tempor, nisi nec tempus lobortis”
+                          <p class="mb-0" style="text-align: justify;">
+                             “Working with omirai on this project was very satisfactory for CODEN. They are always willing to take on any challenge and will stop at nothing until they meet your expectations. They have a keen eye for details and I would recommend to anyone looking for innovative generic or bespoke solutions”
                           </p>
                           <div class="mt-4">
-                             <h5 class="mb-0">Anita parmar</h5>
-                             <small>Content Producer</small>
+                             <h5 class="mb-0">Ahmadou Bakoura</h5>
+                             <small>President CODEN</small>
                           </div>
                        </div>
                     </div>
@@ -232,15 +244,14 @@
                     <div class="card shadow-sm h-100">
                        <div class="card-body p-lg-5">
                           <figure class="mb-5">
-                             <img src="assets/images/client-logo/clients-logo-1.svg" alt="logo" />
+                             <img src="{{ asset('assets/images/client-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo" />
                           </figure>
-                          <p class="mb-0">
-                             “Aenean pharetra finibus mauris a porttitor. Nam dui tortor, finibus sit amet feugiat porta, tempus in odio. Interdum et malesuada fames ac ante ipsum primis in
-                             faucibus.”
+                          <p class="mb-0" style="text-align: justify;">
+                             “We were flabbergasted by the professionalism and the meticulous work done in the achievement of the solution. We had always heard of Artificial Intelligence and Machine Learning and seeing it being implemented was just so awesome. We are really proud and satisfied of the work done. We are convinced of reaching higher heights through our collaboration. Great job.”
                           </p>
                           <div class="mt-4">
-                             <h5 class="mb-0">Jitu Chauhan</h5>
-                             <small>Studio Manager</small>
+                             <h5 class="mb-0">Mamekong Emeline</h5>
+                             <small>CEO Cassie Hub</small>
                           </div>
                        </div>
                     </div>
@@ -249,12 +260,12 @@
                     <div class="card shadow-sm h-100">
                        <div class="card-body p-lg-5">
                           <figure class="mb-5">
-                             <img src="assets/images/client-logo/clients-logo-3.svg" alt="logo" />
+                             <img src="{{ asset('assets/images/client-logo/snicom.svg') }}" alt="Snicom Logo" />
                           </figure>
-                          <p class="mb-0">“Pellentesque sit amet turpis porta augue pretium dictum. Pellentesque commodo bitur ut massa cursus, congue augue vitae, efficitur metus.”</p>
+                          <p class="mb-0" style="text-align: justify;">“We have worked with numerous startups and I would say omirai stood out. Their approach and innovative solutions they made was a game changer for us. We were able to reach an extra mile and this was advantageous for us and for them. Here we go for a very long collaboration together ”</p>
                           <div class="mt-4">
-                             <h5 class="mb-0">Sandip Chauhan</h5>
-                             <small>Senior Research Program Manager</small>
+                             <h5 class="mb-0">Saurelle Nyoma</h5>
+                             <small>CEO Snicom</small>
                           </div>
                        </div>
                     </div>
@@ -270,9 +281,9 @@
            <div class="row line-pattern bg-primary-gradient rounded-3 p-7 g-0">
               <div class="col-lg-8 offset-lg-2 z-1">
                  <div class="text-center py-md-7">
-                    <h2 class="h1 text-white-stable">Want to speak with a expert?</h2>
+                    <h2 class="h1 text-white-stable">Want to speak with an expert?</h2>
                     <p class="text-white-50 px-lg-7 mb-5">
-                       We’d love to hear about your brand and business challenges, even if you’re not sure what your next step is. No pitch, no strings attached.
+                       We’d love to hear about your brand and business challenges, even if you’re not sure what your next step is.
                     </p>
                     <a href="#!" class="btn btn-dark">Let's talk</a>
                  </div>
@@ -282,3 +293,8 @@
      </section>
      <!--Speak with expert end-->
 @endsection
+@push('js')
+   <!-- Swiper JS -->
+   <script src="{{ asset('assets/libs/swiper/swiper-bundle.min.js') }}"></script>
+   <script src="{{ asset('assets/js/vendors/swiper.js') }}"></script>
+@endpush

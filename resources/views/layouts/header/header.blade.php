@@ -62,7 +62,7 @@
                         {{-- Solutions :: END --}}
 
                         {{-- About :: START --}}
-                        <a class="nav-link" href="{{route('about')}}" role="button"
+                        <a class="nav-link" href="{{route('about_us')}}" role="button"
                                  aria-expanded="false">About</a>
                         {{-- About :: END --}}
 
@@ -75,15 +75,15 @@
                     {{-- Auth & Language Switcher :: START --}}
                     <div class="mt-3 mt-lg-0 d-flex align-items-center">
                         <div class="dropdown ms-3">
-                            <a class="dropdown-toggle   text-primary-hover" href="#" role="button"
+                            <a class="dropdown-toggle nav-link" href="#" role="button"
                                 id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> <img class="fa-fw me-2" src="{{asset('assets/images/flags/fr.svg')}}" alt="">
+                                aria-expanded="false"> <img class="fa-fw me-2" src="{{asset('assets/images/flags/fr.svg')}}" alt="French Flag">
                                 Français </a>
                             <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
                                 <span class="dropdown-item-text">Select language</span>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><img class="fa-fw me-2"
-                                        src="{{asset('assets/images/flags/uk.svg')}}" alt=""> English</a>
+                                        src="{{asset('assets/images/flags/uk.svg')}}" alt="English Flag"> English</a>
                             </div>
                         </div>
                         <a href="signin.html" class="btn btn-light mx-2">Login</a>
