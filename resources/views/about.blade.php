@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('title')
-    About Us
+{{ __('website/about.page_title') }}
 @endsection
 @section('body')
     <div class="pattern-square"></div>
@@ -10,11 +10,11 @@
            <div class="row align-items-center g-4">
               <div class="col-lg-6 col-md-12">
                  <div class="me-xl-8">
-                    <h1 class="mb-3">Who we are</h1>
-                    <p class="lead mb-4">We help entrepreneurs and business builders enhance efficiency, optimize business processes and growth</p>
+                    <h1 class="mb-3">{{ __('website/about.heading') }}</h1>
+                    <p class="lead mb-4">{{ __('website/about.subheading') }}</p>
                     <p class="mb-6 me-xl-6" style="text-align: justify;">
-                     Our solutions are designed to scale with your business. Whether you're an individual, startup or an enterprise, our flexible architecture ensures seamless integration and adaptability to evolving needs.
-                    </p>
+                     {{ __('website/about.description') }}
+                    </p> 
                     <div class="row g-lg-3">
                        <div class="col-md-6">
                           <ul class="list-unstyled mb-3">
@@ -25,7 +25,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Professional Team.</span>
+                                <span class="ms-2">{{ __('website/about.description_point1') }}</span>
                              </li>
                              <li class="d-flex">
                                 <span>
@@ -34,7 +34,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Quality Service and Strategies.</span>
+                                <span class="ms-2">{{ __('website/about.description_point2') }}</span>
                              </li>
                           </ul>
                        </div>
@@ -47,7 +47,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Follow-up and Feedback.</span>
+                                <span class="ms-2">{{ __('website/about.description_point3') }}</span>
                              </li>
                              <li class="d-flex">
                                 <span>
@@ -56,7 +56,7 @@
                                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                    </svg>
                                 </span>
-                                <span class="ms-2">Cutting Edge Technologies.</span>
+                                <span class="ms-2">{{ __('website/about.description_point4') }}</span>
                              </li>
                           </ul>
                        </div>
@@ -71,61 +71,63 @@
            </div>
         </div>
         <div class="container">
-           <div class="swiper logoSwiper">
-              <div class="swiper-wrapper mb-7">
-                 <div class="swiper-slide">
-                    <figure class="text-center mb-4 mb-lg-0">
-                       <img src="{{ asset('assets/images/client-logo/dinovix.svg') }}" alt="Dinovix Logo" />
-                    </figure>
-                 </div>
-                 <div class="swiper-slide">
-                    <figure class="text-center mb-4 mb-lg-0">
-                       <img src="{{ asset('assets/images/client-logo/coden.svg') }}" alt="CODEN Logo" />
-                    </figure>
-                 </div>
-                 <div class="swiper-slide">
-                    <figure class="text-center mb-4 mb-lg-0">
-                       <img src="{{ asset('assets/images/client-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo" />
-                    </figure>
-                 </div>
-                 <div class="swiper-slide">
-                    <figure class="text-center mb-4 mb-lg-0">
-                       <img src="{{ asset('assets/images/client-logo/copressa.svg') }}" alt="Copressa Logo" />
-                    </figure>
-                 </div>
-                 <div class="swiper-slide">
-                    <figure class="text-center mb-4 mb-lg-0">
-                       <img src="{{ asset('assets/images/client-logo/saurellenyoma.svg') }}" alt="Saurelle Nyoma Logo" />
-                    </figure>
-                 </div>
-                 <div class="swiper-slide">
-                  <figure class="text-center mb-4 mb-lg-0">
-                     <img src="{{ asset('assets/images/client-logo/djasportsacademy.svg') }}" alt="Dja Sports Academy Logo" />
-                  </figure>
-               </div>
-               <div class="swiper-slide">
-                  <figure class="text-center mb-4 mb-lg-0">
-                     <img src="{{ asset('assets/images/client-logo/target.svg') }}" alt="Target Entreprise Logo" />
-                  </figure>
-               </div>
-               <div class="swiper-slide">
-                  <figure class="text-center mb-4 mb-lg-0">
-                     <img src="{{ asset('assets/images/client-logo/snicom.svg') }}" alt="Snicom Hub Logo" />
-                  </figure>
-               </div>
-               <div class="swiper-slide">
-                  <figure class="text-center mb-4 mb-lg-0">
-                     <img src="{{ asset('assets/images/client-logo/sophistique-by-us.svg') }}" alt="Sophistiquée By Us Logo" />
-                  </figure>
-               </div>
-               <div class="swiper-slide">
-                  <figure class="text-center mb-4 mb-lg-0">
-                     <img src="{{ asset('assets/images/client-logo/guimma.svg') }}" alt="Guimma Logo" />
-                  </figure>
-               </div>
-              </div>
-              <div class="swiper-pagination"></div>
-           </div>
+           <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                <div class="row row-cols-lg-5 row-cols-md-4 row-cols-2 justify-content-center g-5">
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/dinovix.svg') }}" alt="Dinovix Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/coden.svg') }}" alt="CODEN Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/copressa.svg') }}" alt="COPRESSA Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/saurellenyoma.svg') }}" alt="Saurelle Nyoma Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/djasportsacademy.svg') }}" alt="Dja Sports Academy Logo " />
+                        </figure>
+                    </div>
+
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/target.svg') }}" alt="Target Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/snicom.svg') }}" alt="Snicom Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/sophistique-by-us.svg') }}" alt="Sophistiqué By Us Logo " />
+                        </figure>
+                    </div>
+                    <div class="col" data-cue="slideInDown">
+                        <figure class="text-center mb-0">
+                            <img src="{{ asset('assets/images/brand-logo/guimma.svg') }}" alt="Guimma Logo " />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
      </section>
      <!--Who we are end-->
@@ -136,7 +138,7 @@
            <div class="row">
               <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                  <div class="text-center mb-xl-7 mb-5">
-                    <h2 class="mb-0">Our principles that keep us moving forward together.</h2>
+                    <h2 class="mb-0">{{ __('website/about.our_principles') }}</h2>
                  </div>
               </div>
            </div>
@@ -151,8 +153,8 @@
                     </svg>
                  </div>
 
-                 <h4>Our Mission</h4>
-                 <p class="mb-0">With technology at our core, we build innovative solutions to empower businesses to operate anywhere, anytime.</p>
+                 <h4>{{ __('website/about.our_mission') }}</h4>
+                 <p class="mb-0">{{ __('website/about.our_mission_description') }}</p>
               </div>
               <div class="col-lg-4 col-md-4">
                  <div class="mb-5">
@@ -162,8 +164,8 @@
                     </svg>
                  </div>
 
-                 <h4>Our Vision</h4>
-                 <p class="mb-0">To be a reference tech company through its solutions that empower businesses of all sizes to grow without borders.</p>
+                 <h4>{{ __('website/about.our_vision') }}</h4>
+                 <p class="mb-0">{{ __('website/about.our_vision_description') }}</p>
               </div>
               <div class="col-lg-4 col-md-4">
                  <div class="mb-5">
@@ -175,8 +177,8 @@
                     </svg>
                  </div>
 
-                 <h4>Our Purpose</h4>
-                 <p class="mb-0">To empower entrepreneurs and business builders with solutions that have an impact. Our tagline <b>Impacting Today, Changing Tommorow</b> says it all.
+                 <h4>{{ __('website/about.our_purpose') }}</h4>
+                 <p class="mb-0">{!! __('website/about.our_purpose_description') !!}
                  </p>
               </div>
            </div>
@@ -191,19 +193,19 @@
               <div class="col-md-4 col-6">
                  <div class="text-center">
                     <h2 class="text-white-stable">2022</h2>
-                    <h5 class="text-white-stable mb-0">Founded</h5>
+                    <h5 class="text-white-stable mb-0">{{ __('website/about.founded') }}</h5>
                  </div>
               </div>
               <div class="col-md-4 col-6">
                  <div class="text-center">
                     <h2 class="text-white-stable">15+</h2>
-                    <h5 class="text-white-stable mb-0">Projects Shipped</h5>
+                    <h5 class="text-white-stable mb-0">{{ __('website/about.projects_shipped') }}</h5>
                  </div>
               </div>
               <div class="col-md-4 col-6">
                  <div class="text-center">
                     <h2 class="text-white-stable">10+</h2>
-                    <h5 class="text-white-stable mb-0">Team Members</h5>
+                    <h5 class="text-white-stable mb-0">{{ __('website/about.team_members') }}</h5>
                  </div>
               </div>
            </div>
@@ -217,7 +219,7 @@
            <div class="row">
               <div class="col-xl-8 offset-xl-2 col-md-8 offset-md-2">
                  <div class="text-center mx-xl-7 mb-5">
-                    <h2 class="mb-3">Read the real-life success stories of the companies and industries.</h2>
+                    <h2 class="mb-3">{{ __('website/about.success_story_title') }}</h2>
                     
                  </div>
               </div>
@@ -231,11 +233,11 @@
                              <img src="{{ asset('assets/images/client-logo/coden.svg') }}" alt="CODEN Logo" />
                           </figure>
                           <p class="mb-0" style="text-align: justify;">
-                             “Working with omirai on this project was very satisfactory for CODEN. They are always willing to take on any challenge and will stop at nothing until they meet your expectations. They have a keen eye for details and I would recommend to anyone looking for innovative generic or bespoke solutions”
+                             “{{ __('website/about.success_story1') }}”
                           </p>
                           <div class="mt-4">
-                             <h5 class="mb-0">Ahmadou Bakoura</h5>
-                             <small>President CODEN</small>
+                             <h5 class="mb-0">{{ __('website/about.success_story1_person_name') }}</h5>
+                             <small>{{ __('website/about.success_story1_person_role') }}</small>
                           </div>
                        </div>
                     </div>
@@ -247,11 +249,11 @@
                              <img src="{{ asset('assets/images/client-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo" />
                           </figure>
                           <p class="mb-0" style="text-align: justify;">
-                             “We were flabbergasted by the professionalism and the meticulous work done in the achievement of the solution. We had always heard of Artificial Intelligence and Machine Learning and seeing it being implemented was just so awesome. We are really proud and satisfied of the work done. We are convinced of reaching higher heights through our collaboration. Great job.”
+                             “{{ __('website/about.success_story2') }}”
                           </p>
                           <div class="mt-4">
-                             <h5 class="mb-0">Mamekong Emeline</h5>
-                             <small>CEO Cassie Hub</small>
+                             <h5 class="mb-0">{{ __('website/about.success_story2_person_name') }}</h5>
+                             <small>{{ __('website/about.success_story2_person_role') }}</small>
                           </div>
                        </div>
                     </div>
@@ -262,10 +264,10 @@
                           <figure class="mb-5">
                              <img src="{{ asset('assets/images/client-logo/snicom.svg') }}" alt="Snicom Logo" />
                           </figure>
-                          <p class="mb-0" style="text-align: justify;">“We have worked with numerous startups and I would say omirai stood out. Their approach and innovative solutions they made was a game changer for us. We were able to reach an extra mile and this was advantageous for us and for them. Here we go for a very long collaboration together ”</p>
+                          <p class="mb-0" style="text-align: justify;">“{{ __('website/about.success_story3') }}”</p>
                           <div class="mt-4">
-                             <h5 class="mb-0">Saurelle Nyoma</h5>
-                             <small>CEO Snicom</small>
+                             <h5 class="mb-0">{{ __('website/about.success_story3_person_name') }}</h5>
+                             <small>{{ __('website/about.success_story3_person_role') }}</small>
                           </div>
                        </div>
                     </div>
@@ -281,11 +283,11 @@
            <div class="row line-pattern bg-primary-gradient rounded-3 p-7 g-0">
               <div class="col-lg-8 offset-lg-2 z-1">
                  <div class="text-center py-md-7">
-                    <h2 class="h1 text-white-stable">Want to speak with an expert?</h2>
+                    <h2 class="h1 text-white-stable">{{ __('website/about.cta_heading') }}</h2>
                     <p class="text-white-50 px-lg-7 mb-5">
-                       We’d love to hear about your brand and business challenges, even if you’re not sure what your next step is.
+                     {{ __('website/about.cta_text') }}
                     </p>
-                    <a href="#!" class="btn btn-dark">Let's talk</a>
+                    <a href="http://wa.me/+237694113593" class="btn btn-dark">{{ __('website/about.cta_button') }}</a>
                  </div>
               </div>
            </div>
@@ -293,8 +295,3 @@
      </section>
      <!--Speak with expert end-->
 @endsection
-@push('js')
-   <!-- Swiper JS -->
-   <script src="{{ asset('assets/libs/swiper/swiper-bundle.min.js') }}"></script>
-   <script src="{{ asset('assets/js/vendors/swiper.js') }}"></script>
-@endpush

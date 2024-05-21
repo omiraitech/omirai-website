@@ -10,20 +10,20 @@
                             <img src="{{ asset('assets/images/logo/logo.svg') }}" alt="logo" class="text-inverse" />
                         </a>
                     </div>
-                    <p class="mb-5">We are an AI tech company that provides cutting edge technologies, solutions and services to drive positive change, enhance efficiency, optimize business processes and growth.</p>
+                    <p class="mb-5">{{ __('website/home.header_description') }}</p>
 
                     <form class="needs-validation" novalidate>
-                        <h5 class="mb-3">Subscribe to our newsletter</h5>
+                        <h5 class="mb-3">{{ __('website/layouts/footer.subscribe_newsletter') }}</h5>
                         <div class="row g-2">
                             <div class="col-lg-9 col-8">
                                 <label for="subscribeEmail" class="visually-hidden">Email</label>
                                 <input type="email" class="form-control" id="subscribeEmail"
-                                    placeholder="Email address" required />
+                                    placeholder="{{ __('forms.email_address') }}" required />
                                 <div class="invalid-feedback">Please enter email.</div>
                             </div>
                             <div class="col-lg-3 col-4">
                                 <div>
-                                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                                    <button type="submit" class="btn btn-primary">{{ __('website/layouts/footer.subscribe_newsletter_button') }}</button>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                     <div class="col-lg-6 col-12">
                         <div class="position-relative">
                             <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0">
-                                <h5>Info</h5>
+                                <h5>{{ __('website/layouts/footer.info') }}</h5>
                                 <a class="d-block d-lg-none stretched-link text-inherit" data-bs-toggle="collapse"
                                     href="#collapseLanding" role="button" aria-expanded="false"
                                     aria-controls="collapseLanding">
@@ -50,7 +50,7 @@
                                                 <path d="M10.5 8.5V3.707l.854-.853A.5.5 0 0 0 11.5 2.5v-2A.5.5 0 0 0 11 0H9.5a.5.5 0 0 0-.5.5v8zM5 7c0 .334-.164.264-.415.157C4.42 7.087 4.218 7 4 7s-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0"/>
                                                 <path d="M4 3h4v1H6.646A4 4 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3V3a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4m0 1a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3"/>
                                               </svg> &nbsp;
-                                            P.0. Box 15402, Yaounde, Cameroon </p>
+                                              {{ __('website/layouts/footer.info_point1') }}</p>
                                     </li>
                                     <li class="mb-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
@@ -77,10 +77,10 @@
                                             <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
                                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
                                           </svg> (GMT + 1) &nbsp;
-                                        <p class="text-decoration-none text-reset">Monday - Friday : 08:00 - 17:00</p>
+                                        <p class="text-decoration-none text-reset">{{ __('website/layouts/footer.info_point2') }} : 08:00 - 17:00</p>
                                     </li>
                                     <li class="mb-2">
-                                        <p class="text-decoration-none text-reset">Saturday : 09:00 - 13:00</p>
+                                        <p class="text-decoration-none text-reset">{{ __('website/layouts/footer.info_point3') }} : 09:00 - 13:00</p>
                                     </li>
                                 </ul>
                             </div>
@@ -89,7 +89,7 @@
                     <div class="col-lg-3 col-12">
                         <div
                             class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative">
-                            <h5>Links</h5>
+                            <h5>{{ __('website/layouts/footer.links') }}</h5>
                             <a class="d-block d-lg-none stretched-link text-inherit" data-bs-toggle="collapse"
                                 href="#collapseLinks" role="button" aria-expanded="false"
                                 aria-controls="collapseLinks">
@@ -99,22 +99,22 @@
                         <div class="collapse d-lg-block" id="collapseLinks" data-bs-parent="#ft-links">
                             <ul class="list-unstyled mb-0 py-3 py-lg-0">
                                 <li class="mb-2">
-                                    <a href="{{ route('welcome')}}" class="text-decoration-none text-reset">Home</a>
+                                    <a href="{{ route('welcome')}}" class="text-decoration-none text-reset">{{ __('website/layouts/footer.links_home') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="{{ route('services')}}" class="text-decoration-none text-reset">Services</a>
+                                    <a href="{{ route('services')}}" class="text-decoration-none text-reset">{{ __('website/layouts/footer.links_services') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="{{ route('portfolio')}}" class="text-decoration-none text-reset">Portfolio</a>
+                                    <a href="{{ route('portfolio')}}" class="text-decoration-none text-reset">{{ __('website/layouts/footer.links_portfolio') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="{{ route('solutions')}}" class="text-decoration-none text-reset">Solutions</a>
+                                    <a href="{{ route('solutions')}}" class="text-decoration-none text-reset">{{ __('website/layouts/footer.links_solutions') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="{{ route('about_us')}}" class="text-decoration-none text-reset">About</a>
+                                    <a href="{{ route('about_us')}}" class="text-decoration-none text-reset">{{ __('website/layouts/footer.links_about') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="{{ route('contact_us')}}" class="text-decoration-none text-reset">Contact</a>
+                                    <a href="{{ route('contact_us')}}" class="text-decoration-none text-reset">{{ __('website/layouts/footer.links_contact') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -122,7 +122,7 @@
                     <div class="col-lg-3 col-12">
                         <div
                             class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative">
-                            <h5>Account</h5>
+                            <h5>{{ __('website/layouts/footer.account') }}</h5>
                             <a class="d-block d-lg-none stretched-link text-inherit" data-bs-toggle="collapse"
                                 href="#collapseAccounts" role="button" aria-expanded="false"
                                 aria-controls="collapseAccounts">
@@ -132,21 +132,19 @@
                         <div class="collapse d-lg-block" id="collapseAccounts" data-bs-parent="#ft-links">
                             <ul class="list-unstyled mb-0 py-3 py-lg-0">
                                 <li class="mb-2">
-                                    <a href="signup.html" class="text-decoration-none text-reset">Register</a>
+                                    <a href="signup.html" class="text-decoration-none text-reset">{{ __('website/layouts/footer.account_register') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="signin.html" class="text-decoration-none text-reset">Login</a>
+                                    <a href="signin.html" class="text-decoration-none text-reset">{{ __('website/layouts/footer.account_login') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="forget-password.html" class="text-decoration-none text-reset">Forgot
-                                        Password</a>
+                                    <a href="forget-password.html" class="text-decoration-none text-reset">{{ __('website/layouts/footer.account_forgot_password') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="reset-password.html" class="text-decoration-none text-reset">Reset
-                                        Password</a>
+                                    <a href="reset-password.html" class="text-decoration-none text-reset">{{ __('website/layouts/footer.account_reset_password') }}</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="#!" class="text-decoration-none text-reset">Profile</a>
+                                    <a href="#!" class="text-decoration-none text-reset">{{ __('website/layouts/footer.account_profile') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -159,10 +157,10 @@
         <div class="row align-items-center">
             <div class="col-md-9">
                 <div class="small mb-3 mb-md-0">
-                    Copyright © @php  echo date('Y'); @endphp
+                    {{ __('website/layouts/footer.copyright') }} © @php  echo date('Y'); @endphp
 
                     <span class="text-primary"><a href="#">omirai</a></span>
-                    All Rights Reserved
+                    {{ __('website/layouts/footer.all_rights_reserved') }}
                     <span class="text-primary"></span>
                 </div>
             </div>

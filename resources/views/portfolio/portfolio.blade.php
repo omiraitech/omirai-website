@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('title')
-Portfolio
+{{ __('website/portfolio.page_title') }}
 @endsection
 @section('body')
 <div class="pattern-square"></div>
@@ -9,10 +9,9 @@ Portfolio
    <div class="container">
       <div class="row">
          <div class="col-lg-6 col-md-12 col-12">
-            <h1 class="mb-3">We take digital experiences to the next level</h1>
+            <h1 class="mb-3">{{ __('website/portfolio.heading') }}</h1>
             <p class="mb-0 lead">
-               Our dedicated services are developed to fulfill the whole product cycle. They range from discovery, branding, design over to development and continuous improvements in order to
-               achieve the best outcome.‍
+               {{ __('website/portfolio.description') }}
             </p>
          </div>
       </div>
@@ -27,16 +26,16 @@ Portfolio
          <div class="mb-4">
             <ul class="nav nav-lb-tab gallery-filter">
                <li class="nav-item">
-                  <a class="nav-link active filter-item" data-filter="all" aria-current="page" href="#">All Projects</a>
+                  <a class="nav-link active filter-item" data-filter="all" aria-current="page" href="#">{{ __('website/portfolio.all_projects') }}</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link filter-item" href="#" data-filter="businessDev&Con">Business Development & Consultancy</a>
+                  <a class="nav-link filter-item" href="#" data-filter="businessDev&Con">{{ __('website/portfolio.business_dev_consult') }}</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link filter-item" href="#" data-filter="eCommerceDevelopment">eCommerce Development</a>
+                  <a class="nav-link filter-item" href="#" data-filter="eCommerceDevelopment">{{ __('website/portfolio.ecom_dev') }}</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link filter-item" href="#" data-filter="webDevelopment">Web Development</a>
+                  <a class="nav-link filter-item" href="#" data-filter="webDevelopment">{{ __('website/portfolio.web_dev') }}</a>
                </li>
             </ul>
          </div>
@@ -54,13 +53,13 @@ Portfolio
 
             <div class="mb-5">
                <h2 class="lh-base h4">
-                  <a href="//djasportsacademy.omiraitech.com/" target="_blank" class="text-reset">Dja Sports Academy Meyomessala</a>
+                  <a href="//djasportsacademy.omiraitech.com/" target="_blank" class="text-reset">{{ __('website/portfolio.project1_title') }}</a>
                </h2>
-               <p class="mb-0">Discover the sports academy that makes the commune of Meyomessala proud</p>
+               <p class="mb-0">{{ __('website/portfolio.project1_desc') }}</p>
             </div>
 
             <a href="//djasportsacademy.omiraitech.com/" target="_blank" class="btn btn-outline-dark">
-               View Project
+               {{ __('website/portfolio.view_project') }}
                <span class="ms-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                      <path
@@ -72,7 +71,7 @@ Portfolio
          <!-- gallery item start -->
          <div class="mt-md-5 gallery-item eCommerceDevelopment businessDev&Con all ">
             <figure class="lift position-relative btn-arrow mb-5">
-               <a href="/portfolio/cassie-hub" class="gallery-item-inner">
+               <a href="{{ route('cassie-hub_portfolio')}}" class="gallery-item-inner">
                   <img src="{{ asset('assets/images/portfolio/cassie-hub.png') }}" alt="logo cassie-hub" class="img-fluid rounded-3" />
                   <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
                      <i class="bi bi-arrow-up-right"></i>
@@ -82,12 +81,12 @@ Portfolio
 
             <div class="mb-5">
                <h2 class="lh-base h4">
-                  <a href="/portfolio/cassie-hub" class="text-reset">Cassie Hub</a>
+                  <a href="{{ route('cassie-hub_portfolio')}}" class="text-reset">{{ __('website/portfolio.project2_title') }}</a>
                </h2>
-               <p class="mb-0">Shop on the e-commerce platform that promotes health, beauty and beyond</p>
+               <p class="mb-0">{{ __('website/portfolio.project2_desc') }}</p>
             </div>
-            <a href="/portfolio/cassie-hub" class="btn btn-outline-dark">
-               View Project
+            <a href="{{ route('cassie-hub_portfolio')}}" class="btn btn-outline-dark">
+               {{ __('website/portfolio.view_project') }}
                <span class="ms-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                      <path
@@ -100,7 +99,7 @@ Portfolio
          <!-- gallery item start -->
          <div class="gallery-item design webDevelopment all businessDev&Con">
             <figure class="lift position-relative btn-arrow mb-5">
-               <a href="/portfolio/coden"  class="gallery-item-inner">
+               <a href="{{ route('coden_portfolio')}}"  class="gallery-item-inner">
                   <img src="{{ asset('assets/images/portfolio/coden.png') }}" alt="logo coden" class="img-fluid rounded-3" />
                   <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
                      <i class="bi bi-arrow-up-right"></i>
@@ -110,13 +109,13 @@ Portfolio
 
             <div class="mb-5">
                <h2 class="lh-base h4">
-                  <a href="/portfolio/coden" class="text-reset">CODEN</a>
+                  <a href="{{ route('coden_portfolio')}}" class="text-reset">{{ __('website/portfolio.project3_title') }}</a>
                </h2>
-               <p class="mb-0">Immerse yourself with the Ndjola Sustainable Development Committee that promotes the multidimensional development of Ndjola </p>
+               <p class="mb-0">{{ __('website/portfolio.project3_desc') }} </p>
             </div>
 
-            <a href="/portfolio/coden" class="btn btn-outline-dark">
-               View Project
+            <a href="{{ route('coden_portfolio')}}" class="btn btn-outline-dark">
+               {{ __('website/portfolio.view_project') }}
                <span class="ms-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                      <path
@@ -139,12 +138,12 @@ Portfolio
 
             <div class="mb-5">
                <h2 class="lh-base h4">
-                  <a href="//copressa.omiraitech.com" target="_blank" class="text-reset">COPRESSA</a>
+                  <a href="//copressa.omiraitech.com" target="_blank" class="text-reset">{{ __('website/portfolio.project4_title') }}</a>
                </h2>
-               <p class="mb-0">Check out the NGO that raises awareness, informs and trains the most disadvantaged groups</p>
+               <p class="mb-0">{{ __('website/portfolio.project4_desc') }}</p>
             </div>
             <a href="//copressa.omiraitech.com" target="_blank" class="btn btn-outline-dark">
-               View Project
+               {{ __('website/portfolio.view_project') }}
                <span class="ms-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                      <path

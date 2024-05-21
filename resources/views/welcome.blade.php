@@ -1,10 +1,7 @@
 @extends('layouts.site')
 
-@section('css')
-@endsection
-
 @section('title')
-    Welcome
+{{ __('website/home.page_title') }}
 @endsection
 @section('body')
     <!--hero start-->
@@ -16,14 +13,12 @@
                     <div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
                         <div class="text-center text-lg-start">
                             <div class="mb-4 text-white-stable">
-                                <small class="text-uppercase ls-lg">Artificial Intelligence Tech Startup</small>
-                                <h1 class="mb-3 mt-3 display-3 text-white-stable">We build innovative solutions.</h1>
-                                <p class="lead mb-0">We are an AI tech company that provides cutting edge technologies,
-                                    solutions and services to drive positive change, enhance efficiency, optimize
-                                    business processes and growth.</p>
+                                <small class="text-uppercase ls-lg">{{ __('website/home.header_heading') }}</small>
+                                <h1 class="mb-3 mt-3 display-3 text-white-stable">{{ __('website/home.header_subheading') }}</h1>
+                                <p class="lead mb-0">{{ __('website/home.header_description') }}</p>
                             </div>
 
-                            <a href="#letstalk" class="btn btn-primary">Start project</a>
+                            <a href="#letstalk" class="btn btn-primary">{{ __('website/home.header_start_your_project') }}</a>
                         </div>
                     </div>
                 </div>
@@ -38,13 +33,10 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
-                        <small class="text-uppercase ls-md fw-semibold">Projects we done</small>
+                        <small class="text-uppercase ls-md fw-semibold">{{ __('website/home.projects_we_done_heading') }}</small>
 
-                        <h2 class="my-3">Featured work</h2>
-                        <p class="mb-0" style="text-align: justify !important;">We believe in harnessing the power of AI
-                            to drive positive change and enhance efficiency. Whether you're looking to optimize business
-                            processes, enhance customer experiences, or unlock valuable insights from data, our AI solutions
-                            are designed to deliver measurable and impactful results</p>
+                        <h2 class="my-3">{{ __('website/home.projects_we_done_featured_work') }}</h2>
+                        <p class="mb-0" style="text-align: justify !important;">{{ __('website/home.projects_we_done_featured_work_description') }}</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +45,7 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div data-cue="zoomIn">
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a href="/portfolio/coden">
+                                <a href="{{ route('coden_portfolio')}}">
                                     <img src="{{ asset('assets/images/portfolio/coden.png') }}" alt="CODEN Logo"
                                         class="img-fluid rounded-3" />
 
@@ -64,15 +56,15 @@
                             </figure>
 
                             <h2 class="lh-base h4">
-                                <a href="/portfolio/coden" class="text-reset">CODEN</a>
+                                <a href="{{ route('coden_portfolio')}}" class="text-reset">CODEN</a>
                             </h2>
-                            <p class="mb-0 text-body-tertiary fw-medium">Business Processes Optimization</p>
+                            <p class="mb-0 text-body-tertiary fw-medium">{{ __('website/home.projects_we_done_business_processes_optimization') }}</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
                         <div data-cue="zoomIn">
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a href="/portfolio/cassie-hub">
+                                <a href="{{ route('cassie-hub_portfolio')}}">
                                     <img src="{{ asset('assets/images/portfolio/cassie-hub.png') }}" alt="Cassie Hub Logo"
                                         class="img-fluid rounded-3" />
                                     <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
@@ -82,9 +74,9 @@
                             </figure>
 
                             <h2 class="lh-base h4">
-                                <a href="/portfolio/cassie-hub" class="text-reset">Cassie Hub</a>
+                                <a href="{{ route('cassie-hub_portfolio')}}" class="text-reset">Cassie Hub</a>
                             </h2>
-                            <p class="mb-0 text-body-tertiary fw-medium">E-Commerce</p>
+                            <p class="mb-0 text-body-tertiary fw-medium">{{ __('website/home.projects_we_done_eCommerce') }}</p>
                         </div>
                     </div>
                 </div>
@@ -92,7 +84,7 @@
             <div class="row">
                 <div class="col-lg-12" data-cue="fadeIn">
                     <div class="text-center my-5">
-                        <a href="{{ route('portfolio') }}" class="btn btn-primary">Read case studies</a>
+                        <a href="{{ route('portfolio') }}" class="btn btn-primary">{{ __('website/home.Read case studies') }}</a>
                     </div>
                 </div>
             </div>
@@ -106,11 +98,10 @@
             <div class="row">
                 <div class="col-xl-5 col-md-7" data-cue="fadeIn">
                     <div class="mb-xl-7 mb-5">
-                        <small class="text-uppercase ls-md fw-semibold">our services</small>
-                        <h2 class="h1 mb-3 mt-4">Creating generic and bespoke solutions</h2>
-                        <p class="mb-0 text-body">We endeavour to be at the forefront of innovation, specializing in
-                            developing intelligent solutions that transform businesses, industries and help in business
-                            growth.
+                        <small class="text-uppercase ls-md fw-semibold">{{ __('website/home.services_heading') }}</small>
+                        <h2 class="h1 mb-3 mt-4">{{ __('website/home.services_subheading') }}</h2>
+                        <p class="mb-0 text-body">
+                            {{ __('website/home.services_description') }}
                         </p>
                     </div>
                 </div>
@@ -122,24 +113,19 @@
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120"
-                                        fill="currentColor" class="bi bi-vector-pen text-primary" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z" />
-                                        <path fill-rule="evenodd"
-                                            d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-robot text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+                                        <path fill-rule="evenodd" d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+                                      </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
-                                        <h3>AI Solutions and Integration</h3>
-                                        <p class="mb-0">We understand that every business is unique. That's why we work
-                                            closely with our clients to develop tailor-made AI solutions that address their
-                                            specific challenges and objectives.</p>
+                                        <h3>{{ __('website/home.services_ai_solutions') }}</h3>
+                                        <p class="mb-0">{{ __('website/home.services_ai_solutions_desc') }}</p>
                                     </div>
 
                                     <a href="{{ route('solutions') }}" class="icon-link icon-link-hover">
-                                        Learn More
+                                        {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -166,14 +152,14 @@
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
-                                        <h3>Mobile and Web Development</h3>
-                                        <p class="mb-0">Our dedicated team uses modern tech stack to create solutions
-                                            designed to scale with your business.
+                                        <h3>{{ __('website/home.services_mobile_web_dev') }}</h3>
+                                        <p class="mb-0">
+                                            {{ __('website/home.services_mobile_web_dev_desc') }}
                                         </p>
                                     </div>
 
                                     <a href="{{ route('portfolio') }}" class="icon-link icon-link-hover">
-                                        Learn More
+                                        {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -191,22 +177,19 @@
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-warning bg-opacity-10 border border-warning-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" class="bi bi-palette2 text-warning" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z" />
-                                        <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mortarboard text-warning" viewBox="0 0 16 16">
+                                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                                      </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
-                                        <h3>Trainings</h3>
-                                        <p class="mb-0">We provide a variety of trainings to help stay updated with the
-                                            latest trends in the industry.</p>
+                                        <h3> {{ __('website/home.services_trainings') }}</h3>
+                                        <p class="mb-0">{{ __('website/home.services_trainings_desc') }}</p>
                                     </div>
 
                                     <a href="#!" class="icon-link icon-link-hover">
-                                        Learn More
+                                        {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -224,25 +207,21 @@
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-info bg-opacity-10 border border-info-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" class="bi bi-window-dock text-info" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                                        <path
-                                            d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z" />
-                                    </svg>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow text-info" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                                      </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
-                                        <h3>Business Development and Consultancy</h3>
-                                        <p class="mb-0">Innovation is in our DNA. Our dedicated business development team
-                                            consistently explores new avenues to bring groundbreaking solutions to our
-                                            clients to help them grow.
+                                        <h3>{{ __('website/home.services_business_dev_consult') }}</h3>
+                                        <p class="mb-0">
+                                            {{ __('website/home.services_business_dev_consult_desc') }}
                                         </p>
                                     </div>
 
                                     <a href="#!" class="icon-link icon-link-hover">
-                                        Learn More
+                                        {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -259,26 +238,21 @@
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
-                                    class="p-3 icon-xl icon-shape rounded bg-info bg-opacity-10 border border-info-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" class="bi bi-window-dock text-info" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                                        <path
-                                            d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z" />
-                                    </svg>
+                                    class="p-3 icon-xl icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bar-chart-line text-primary" viewBox="0 0 16 16">
+                                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z"/>
+                                      </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
-                                        <h3>Data Science and Data Analysis</h3>
-                                        <p class="mb-0">We use the latest advancements in AI development to unlock
-                                            valuable insights from data, in order to provide state-of-the-art solutions that
-                                            give our clients a competitive edge .
+                                        <h3>{{ __('website/home.services_datascience_dataanalytics') }}</h3>
+                                        <p class="mb-0">
+                                            {{ __('website/home.services_datascience_dataanalytics_desc') }}
                                         </p>
                                     </div>
 
                                     <a href="#!" class="icon-link icon-link-hover">
-                                        Learn More
+                                        {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -301,11 +275,10 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-md-12 col-12">
                     <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
-                        <small class="text-uppercase ls-md fw-semibold">they trust us</small>
-                        <h2 class="my-3">Building state-of-the-art solutions</h2>
+                        <small class="text-uppercase ls-md fw-semibold">{{ __('website/home.partners_heading') }}</small>
+                        <h2 class="my-3">{{ __('website/home.partners_subheading') }}</h2>
                         <p class="mb-0 text-body">
-                            We work with cutting-edge technologies designed to solve your product requirements.
-                            Focus on finding solutions for your business needs while we handle the technical aspect.
+                            {{ __('website/home.partners_paragraph') }}
                         </p>
                     </div>
                 </div>
@@ -377,18 +350,15 @@
             <div class="row g-4">
                 <div class="col-xl-5 col-lg-6 col-12" data-cue="slideInLeft">
                     <div class="mb-4">
-                        <small class="text-uppercase ls-md fw-semibold">who we are</small>
-                        <h2 class="h1 mt-4 mb-3">Believes in the power of creative strategy.</h2>
-                        <p class="mb-3">We are an AI tech company that provides cutting edge technologies, solutions and
-                            services to drive positive change, enhance efficiency, optimize business processes and growth .
+                        <small class="text-uppercase ls-md fw-semibold">{{ __('website/home.who_we_are_heading') }}</small>
+                        <h2 class="h1 mt-4 mb-3">{{ __('website/home.who_we_are_subheading') }}</h2>
+                        <p class="mb-0">
+                            {!! __('website/home.who_we_are_paragraph') !!}
                         </p>
-                        <p class="mb-0">Our solutions are designed to scale with your business. Whether you're an
-                            individual, startup or an enterprise, our flexible architecture ensures seamless integration and
-                            adaptability to evolving needs.</p>
                     </div>
 
                     <a href="{{ route('about_us') }}" class="icon-link icon-link-hover">
-                        More about us
+                        {{ __('website/home.more_about_us') }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                             class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -433,8 +403,8 @@
                             </svg>
                         </div>
 
-                        <h4>Expert team</h4>
-                        <p class="mb-0">An expert team available to help you with your project.</p>
+                        <h4>{{ __('website/home.expert_team') }}</h4>
+                        <p class="mb-0">{{ __('website/home.expert_team_desc') }}</p>
                     </div>
                 </div>
                 <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" data-cue="zoomIn">
@@ -447,9 +417,8 @@
                             </svg>
                         </div>
 
-                        <h4>Winning Strategies</h4>
-                        <p class="mb-0">Our solutions and strategies are meant to meet your needs and get you to the next
-                            level</p>
+                        <h4>{{ __('website/home.winning_strategies') }}</h4>
+                        <p class="mb-0">{{ __('website/home.winning_strategies_desc') }}</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-cue="zoomIn">
@@ -462,8 +431,8 @@
                             </svg>
                         </div>
 
-                        <h4>Customer Service</h4>
-                        <p class="mb-0">Dedicated customer service for your queries and follow up on the projects</p>
+                        <h4>{{ __('website/home.customer_service') }}</h4>
+                        <p class="mb-0">{{ __('website/home.customer_service_desc') }}</p>
                     </div>
                 </div>
             </div>
@@ -482,9 +451,9 @@
                         <div class="col-lg-6 col-12 order-2" data-cue="slideInLeft">
                             <div class="me-xl-7">
                                 <div class="mb-5">
-                                    <h2 class="h1 mb-4 text-capitalize">Got a project? Let's Talk</h2>
-                                    <p class="mb-0">Book a free consultation call with one of our experts and get
-                                        help with your next moves. It's always good to talk to an expert. It's free!
+                                    <h2 class="h1 mb-4 text-capitalize">{{ __('website/home.start_your_project_heading') }}</h2>
+                                    <p class="mb-0" style="text-align: justify !important;">
+                                        {{ __('website/home.start_your_project_paragraph') }}
                                     </p>
                                 </div>
                                 <div class="mb-5">
@@ -494,21 +463,21 @@
                                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                                                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                             </svg>
-                                            <span class="ms-1">Have a question regarding our offers and services?</span>
+                                            <span class="ms-1">{{ __('website/home.start_your_project_point1') }}</span>
                                         </li>
                                         <li class="mb-2 d-flex">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                                                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                             </svg>
-                                            <span class="ms-1">Need advice on the next steps?</span>
+                                            <span class="ms-1">{{ __('website/home.start_your_project_point2') }}</span>
                                         </li>
                                         <li class="mb-2 d-flex">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                 fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                                                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                             </svg>
-                                            <span class="ms-1">Hesitating on how to plan the execution?</span>
+                                            <span class="ms-1">{{ __('website/home.start_your_project_point3') }}</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -522,7 +491,7 @@
                                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
                                                     </path>
                                                 </svg>
-                                                Reach out to us through WhatsApp
+                                                {{ __('website/home.start_your_project_reach_out_whatsapp') }}
                                             </a>
                                         </div>
                                     </div>
@@ -535,44 +504,48 @@
                                     <form class="row needs-validation g-3" novalidate>
                                         <div class="col-lg-12">
                                             <div class="mb-3">
-                                                <h3 class="mb-0">Schedule a free estimate call</h3>
+                                                <h3 class="mb-0">{{ __('website/home.start_your_project_form_heading') }}</h3>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <label for="ScheduleFirstnameInput" class="form-label">
-                                                First Name
+                                                {{ __('forms.first_name') }}
                                                 <span class="text-danger">*</span>
                                             </label>
                                             <input type="text" class="form-control" id="ScheduleFirstnameInput"
                                                 required />
-                                            <div class="invalid-feedback">Please enter firstname.</div>
+                                                @php $first_name = __('forms.first_name');@endphp 
+                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $first_name ]) }}</div>
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <label for="scheduleLastnameInput" class="form-label">
-                                                Last Name
+                                                {{ __('forms.last_name') }}
                                                 <span class="text-danger">*</span>
                                             </label>
                                             <input type="text" class="form-control" id="scheduleLastnameInput"
                                                 required />
-                                            <div class="invalid-feedback">Please enter lastname.</div>
+                                                @php $last_name = __('forms.last_name');@endphp 
+                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $last_name ]) }}</div>
                                         </div>
                                         <div class="col-md-12">
                                             <label for="scheduleEmailInput" class="form-label">
-                                                Email
+                                                {{ __('forms.email') }}
                                                 <span class="text-danger">*</span>
                                             </label>
                                             <input type="email" class="form-control" id="scheduleEmailInput"
                                                 required />
-                                            <div class="invalid-feedback">Please enter email.</div>
+                                                 @php $email = __('forms.email');@endphp 
+                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $email ]) }}</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <label for="scheduleTextarea" class="form-label">Message</label>
-                                            <textarea class="form-control" id="scheduleTextarea" placeholder="Write to us" rows="3" required></textarea>
-                                            <div class="invalid-feedback">Please write message.</div>
+                                            <label for="scheduleTextarea" class="form-label">{{ __('forms.message') }}</label>
+                                            <textarea class="form-control" id="scheduleTextarea" placeholder="{{ __('website/home.start_your_project_form_message_placeholder') }}" rows="5" required style="resize: none;"></textarea>
+                                            @php $message = __('forms.message');@endphp 
+                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $message ]) }}</div>
                                         </div>
                                         <div class="d-grid">
-                                            <button class="btn btn-primary" type="submit">Let’s work
-                                                together!</button>
+                                            <button class="btn btn-primary" type="submit">
+                                                {{ __('website/home.start_your_project_form_submit_button') }}</button>
                                         </div>
                                     </form>
                                 </div>

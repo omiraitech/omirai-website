@@ -1,10 +1,7 @@
 @extends('layouts.site')
 
-@section('css')
-@endsection
-
 @section('title')
-    Services
+{{ __('website/services.page_title') }}
 @endsection
 @section('body')
     <div class="pattern-square"></div>
@@ -14,10 +11,9 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
                     <div class="text-center">
-                        <small class="text-uppercase ls-md fw-bold text-primary">Services</small>
-                        <h1 class="mt-4">We provide client-centric services</h1>
-                        <p class="lead">Maximize your business capabilities and reach its full potential with our
-                            services.</p>
+                        <small class="text-uppercase ls-md fw-bold text-primary">{{ __('website/services.heading') }}</small>
+                        <h1 class="mt-4">{{ __('website/services.subheading') }}</h1>
+                        <p class="lead">{{ __('website/services.description') }}</p>
                     </div>
                 </div>
             </div>
@@ -49,18 +45,18 @@
                         </div>
                     </div>
                     <div class="px-lg-4">
-                        <h2 class="mb-3 h3">AI Solutions and Integration</h2>
+                        <h2 class="mb-3 h3">{{ __('website/services.ai_solutions') }}</h2>
                         <p class="mb-5">
-                            We understand that every business is unique. That's why we work closely with our clients to develop tailor-made AI solutions that address their specific challenges, objectives and integrates to their existing pipelines.
+                            {{ __('website/services.ai_solutions_desc') }}
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-4">
-                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">Utilities</span>
-                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">Large Language Model Apps</span>
-                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">AI/ML Solutions</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">{{ __('website/services.ai_solutions_pill1') }}</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">{{ __('website/services.ai_solutions_pill2') }}</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill p-2 px-3">{{ __('website/services.ai_solutions_pill3') }}</span>
                         </div>
 
-                        <a href="'{{route('solutions')}}" class="icon-link icon-link-hover">
-                            View Solutions
+                        <a href="{{route('solutions')}}" class="icon-link icon-link-hover">
+                            {{ __('website/services.ai_solutions_view_solutions') }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -90,10 +86,10 @@
                         </div>
                     </div>
                     <div class="px-lg-4">
-                        <h2 class="mb-3 h3">Web Development</h2>
+                        <h2 class="mb-3 h3"> {{ __('website/services.web_dev') }}</h2>
 
                         <p class="mb-5">
-                            We build reliable, scalable solutions that deliver your vision and exceed your expectations. From websites to web apps we deliver solutions that transform businesses, industries and help in business growth.
+                            {{ __('website/services.web_dev_desc') }}
                         </p>
 
                         <div class="mb-5">
@@ -105,7 +101,7 @@
                                         <path
                                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                     </svg>
-                                    <span class="ms-2">Website Development</span>
+                                    <span class="ms-2">{{ __('website/services.web_dev_point1') }}</span>
                                 </li>
                                 <li class="d-flex mb-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -114,7 +110,7 @@
                                         <path
                                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                     </svg>
-                                    <span class="ms-2">Front/Back-end Development</span>
+                                    <span class="ms-2">{{ __('website/services.web_dev_point2') }}</span>
                                 </li>
                                 <li class="d-flex mb-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -123,7 +119,7 @@
                                         <path
                                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                     </svg>
-                                    <span class="ms-2">Full-stack App Development</span>
+                                    <span class="ms-2">{{ __('website/services.web_dev_point3') }}</span>
                                 </li>
                                 <li class="d-flex mb-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -132,13 +128,13 @@
                                         <path
                                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                     </svg>
-                                    <span class="ms-2">Quality Assurance</span>
+                                    <span class="ms-2">{{ __('website/services.web_dev_point4') }}</span>
                                 </li>
                             </ul>
                         </div>
 
                         <a href="{{route('portfolio')}}" class="icon-link icon-link-hover">
-                            View Portfolio
+                            {{ __('website/services.web_dev_view_portfolio') }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -167,13 +163,13 @@
                         </div>
                     </div>
                     <div class="px-lg-4">
-                        <h2 class="mb-3 h3">eCommerce Development</h2>
+                        <h2 class="mb-3 h3">{{ __('website/services.ecom_dev') }}</h2>
                         <p class="mb-5">
-                            We strive to be at the forefront of modern e-commerce development. Our AI solutions combined to our headless commerce gives an astonishing result.
+                            {{ __('website/services.ecom_dev_desc') }}
                         </p>
 
-                        <a href="#!" class="icon-link icon-link-hover mb-5">
-                            View Case Study
+                        <a href="{{ route('cassie-hub_portfolio')}}" class="icon-link icon-link-hover mb-5">
+                            {{ __('website/services.ecom_dev_view_case_study') }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -208,19 +204,78 @@
                     </div>
 
                     <div class="mb-5">
-                        <h2 class="mb-3 h3">Trainings</h2>
+                        <h2 class="mb-3 h3">{{ __('website/services.trainings') }}</h2>
                         <p class="mb-5">
-                            Are you ready to elevate your skills, empower your team, and drive success in your organization? Look no further! Our tailored training solutions are designed to transform individuals and businesses, providing a roadmap to success in today's dynamic landscape.
+                            {{ __('website/services.trainings_desc') }}
                         </p>
 
-                        <a href="#!" class="icon-link icon-link-hover">
-                            View Trainings
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                        <div class="mb-5">
+                            <ul class="list-unstyled mb-5">
+                                <li class="d-flex mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-check-circle-fill text-success mt-1"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="ms-2">{{ __('website/services.trainings_point1') }}</span>
+                                </li>
+                                <li class="d-flex mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-check-circle-fill text-success mt-1"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="ms-2">{{ __('website/services.trainings_point2') }}</span>
+                                </li>
+                                <li class="d-flex mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-check-circle-fill text-success mt-1"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="ms-2">{{ __('website/services.trainings_point3') }}</span>
+                                </li>
+                                <li class="d-flex mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-check-circle-fill text-success mt-1"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="ms-2">{{ __('website/services.trainings_point4') }}</span>
+                                </li>
+                                <li class="d-flex mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-check-circle-fill text-success mt-1"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="ms-2">{{ __('website/services.trainings_point5') }}</span>
+                                </li>
+                                <li class="d-flex mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-check-circle-fill text-success mt-1"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="ms-2">etc</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a class="btn btn-success" href="http://wa.me/+237694113593" role="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
                                 </path>
                             </svg>
+                            {{ __('website/home.start_your_project_reach_out_whatsapp') }}
                         </a>
                     </div>
                 </div>
@@ -239,19 +294,19 @@
                     </div>
 
                     <div class="mb-5">
-                        <h2 class="mb-3 h3">Business Development and Consultancy</h2>
+                        <h2 class="mb-3 h3">{{ __('website/services.business_dev_consult') }}</h2>
                         <p class="mb-5">
-                            We help in empowering businesses to achieve sustainable growth and success. With a team of seasoned professionals, we offer a comprehensive suite of strategic services designed to elevate your business to new heights.
+                            {{ __('website/services.business_dev_consult_desc') }}
                         </p>
 
-                        <a href="#!" class="icon-link icon-link-hover">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                        <a class="btn btn-success" href="http://wa.me/+237694113593" role="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
                                 </path>
                             </svg>
+                            {{ __('website/home.start_your_project_reach_out_whatsapp') }}
                         </a>
                     </div>
                 </div>
@@ -270,19 +325,19 @@
                     </div>
 
                     <div class="mb-5">
-                        <h2 class="mb-3 h3">Data Science and Data Analysis</h2>
+                        <h2 class="mb-3 h3">{{ __('website/services.datascience_data_analytics') }}</h2>
                         <p class="mb-5">
-                           We are committed to unlocking the full potential of data to drive informed decision-making and foster innovation. With a team of skilled data scientists and analysts, we offer comprehensive data solutions that transform raw information into actionable insights for businesses across diverse industries.
+                            {{ __('website/services.datascience_data_analytics_desc') }}
                         </p>
 
-                        <a href="#!" class="icon-link icon-link-hover">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                        <a class="btn btn-success" href="http://wa.me/+237694113593" role="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
                                 </path>
                             </svg>
+                            {{ __('website/home.start_your_project_reach_out_whatsapp') }}
                         </a>
                     </div>
                 </div>
@@ -299,13 +354,13 @@
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-7">
                             <div class="text-center text-md-start mb-6 mb-md-0">
-                                <h2 class="text-white-stable">Have a Cool Project idea?</h2>
-                                <p class="mb-0 text-dark-50">Plan to building a new website or web app for startup.</p>
+                                <h2 class="text-white-stable">{{ __('website/services.cta_heading') }}</h2>
+                                <p class="mb-0 text-dark-50">{{ __('website/services.cta_paragraph') }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-5">
                             <div class="text-center">
-                                <a href="{{route('contact_us')}}" class="btn btn-primary">Start by saying Hi..</a>
+                                <a href="{{route('contact_us')}}" class="btn btn-primary">{{ __('website/services.cta_button') }}</a>
                             </div>
                         </div>
                     </div>

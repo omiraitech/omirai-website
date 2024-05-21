@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('title')
-    Contact Us
+{{ __('website/contact.page_title') }}
 @endsection
 @section('body')
     <div class="pattern-square"></div>
@@ -11,8 +11,8 @@
                 <div class="col-lg-6 col-12">
                     <div class="me-xl-7">
                         <div class="mb-5">
-                            <h1 class="mb-3">Contact Us</h1>
-                            <p>Connect with us today to learn more about how omirai can help you grow your business.</p>
+                            <h1 class="mb-3">{{ __('website/contact.heading') }}</h1>
+                            <p>{{ __('website/contact.subheading') }}</p>
                         </div>
                         <div class="mb-5">
                             <ul class="list-unstyled">
@@ -23,7 +23,7 @@
                                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                         </svg>
                                     </span>
-                                    <span class="ms-2">Have a project or just curious? Let's talk</span>
+                                    <span class="ms-2">{{ __('website/contact.contact_us_point1') }}</span>
                                 </li>
                                 <li class="mb-2 d-flex">
                                     <span>
@@ -32,7 +32,7 @@
                                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                         </svg>
                                     </span>
-                                    <span class="ms-2">Got questions about our enterprise offerings?</span>
+                                    <span class="ms-2">{{ __('website/contact.contact_us_point2') }}</span>
                                 </li>
                                 <li class="mb-2 d-flex">
                                     <span>
@@ -41,7 +41,7 @@
                                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                         </svg>
                                     </span>
-                                    <span class="ms-2">Want to share feedback on an existing feature or suggest a new one?.</span>
+                                    <span class="ms-2">{{ __('website/contact.contact_us_point3') }}</span>
                                 </li>
                                 <li class="mb-5 d-flex">
                                     <span>
@@ -50,12 +50,12 @@
                                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                         </svg>
                                     </span>
-                                    <span class="ms-2">Need advice on the next steps? Discover the perfect personalized plan for your needs.</span>
+                                    <span class="ms-2">{{ __('website/contact.contact_us_point4') }}</span>
                                 </li>
                             </ul>
 
                             <p class="mb-0">
-                                Impacting Today Changing Tommorow
+                                {{ __('website/contact.slogan') }}
                             </p>
                         </div>
                         <div class="row">
@@ -74,53 +74,78 @@
                             <form class="row g-3 needs-validation" novalidate>
                                 <div class="col-md-6">
                                     <label for="contactFirstNameInput" class="form-label">
-                                        First Name
+                                        {{ __('forms.first_name') }}
                                         <span class="text-danger">*</span>
                                     </label>
                                     <input type="text" class="form-control" id="contactFirstNameInput" required />
-                                    <div class="invalid-feedback">Please enter firstname.</div>
+                                    @php $first_name = __('forms.first_name');@endphp
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $first_name ]) }}</div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="contactLastNameInput" class="form-label">
-                                        Last Name
+                                        {{ __('forms.last_name') }}
                                         <span class="text-danger">*</span>
                                     </label>
                                     <input type="text" class="form-control" id="contactLastNameInput" required />
-                                    <div class="invalid-feedback">Please enter lastname.</div>
+                                    @php $last_name = __('forms.last_name');@endphp 
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $last_name ]) }}</div>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="contactEmailInput" class="form-label">
-                                        Email
+                                        {{ __('forms.email') }}
                                         <span class="text-danger">*</span>
                                     </label>
                                     <input type="email" class="form-control" id="contactEmailInput" required />
-                                    <div class="invalid-feedback">Please enter email.</div>
+                                    @php $email = __('forms.email');@endphp
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $email ]) }}</div>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="contactPhoneInput" class="form-label">Phone
+                                    <label for="contactPhoneInput" class="form-label">{{ __('forms.phone') }}
                                         <span class="text-danger">*</span>
                                     </label>
                                     <input type="tel" class="form-control" id="contactPhoneInput" required />
-                                    <div class="invalid-feedback">Please enter phone.</div>
+                                    @php $phone = __('forms.phone');@endphp
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $phone ]) }}</div>
                                 </div>
-                                <div class="col-md-12">
-                                    <label for="contactCompanyNameInput" class="form-label">Company Name</label>
+                                <div class="col-md-6">
+                                    <label for="contactCompanyNameInput" class="form-label">{{ __('forms.company_name') }}</label>
                                     <input type="text" class="form-control" id="contactCompanyNameInput" required />
-                                    <div class="invalid-feedback">Please enter company name.</div>
+                                    @php $company_name = __('forms.company_name');@endphp
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $company_name ]) }}</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactActivitySectorInput" class="form-label">{{ __('forms.sector_of_activity') }}</label>
+                                    <input type="text" class="form-control" id="contactActivitySectorInput" required />
+                                    @php $sector_of_activity = __('forms.sector_of_activity');@endphp
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $sector_of_activity ]) }}</div>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="contactActivitySectorInput" class="form-label">Sector Of Activity</label>
-                                    <input type="text" class="form-control" id="contactActivitySectorInput" required />
-                                    <div class="invalid-feedback">Please enter the sector of activity.</div>
+                                    <label for="contactMotiveInput" class="form-label">{{ __('forms.motive') }}
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="contactMotiveInput" class="form-control" id="contactMotiveInput" required>
+                                        <option value="enquiry">{{ __('website/contact.enquiry') }}</option>
+                                        <option value="complain">{{ __('website/contact.complain') }}</option>
+                                        <option value="partnership">{{ __('website/contact.partnership') }}</option>
+                                        <option value="ai_ml_solutions">{{ __('website/contact.ai_ml_solutions') }}</option>
+                                        <option value="trainings">{{ __('website/contact.trainings') }}</option>
+                                        <option value="business_dev_consult">{{ __('website/contact.business_dev_consult') }}</option>
+                                        <option value="datascience_dataanalysis">{{ __('website/contact.datascience_dataanalysis') }}</option>
+                                        <option value="other">{{ __('website/contact.other') }}</option>
+                                    </select>
+                                    @php $motive = __('forms.motive');@endphp
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $motive ]) }}</div>
                                 </div>
                                 
                                 <div class="col-md-12">
-                                    <label for="contactTextarea" class="form-label">Message</label>
-                                    <textarea class="form-control" id="contactTextarea" rows="4" placeholder="Write to us" required></textarea>
-                                    <div class="invalid-feedback">Please enter a message.</div>
+                                    <label for="contactTextarea" class="form-label">{{ __('forms.message') }}
+                                        <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="contactTextarea" rows="5" placeholder="{{ __('website/home.start_your_project_form_message_placeholder') }}" required style="resize: none;"></textarea>
+                                    @php $message = __('forms.message');@endphp 
+                                    <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $message ]) }}</div>
                                 </div>
                                 <div class="d-grid">
-                                    <button class="btn btn-primary" type="submit">Send</button>
+                                    <button class="btn btn-primary" type="submit"> {{ __('website/contact.send') }}</button>
                                 </div>
                             </form>
                         </div>
