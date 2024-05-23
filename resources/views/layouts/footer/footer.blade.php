@@ -119,7 +119,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-12">
+                    {{-- <div class="col-lg-3 col-12">
                         <div
                             class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative">
                             <h5>{{ __('website/layouts/footer.account') }}</h5>
@@ -148,7 +148,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

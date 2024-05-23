@@ -10,7 +10,8 @@
         <div class="position-absolute start-0 end-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
+                    {{-- data-cue="zoomIn" --}}
+                    <div class="col-xl-5 col-lg-7 col-12" >
                         <div class="text-center text-lg-start">
                             <div class="mb-4 text-white-stable">
                                 <small class="text-uppercase ls-lg">{{ __('website/home.header_heading') }}</small>
@@ -43,7 +44,7 @@
             <div class="table-responsive-lg">
                 <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div data-cue="zoomIn">
+                        <div >
                             <figure class="lift position-relative btn-arrow mb-4">
                                 <a href="{{ route('coden_portfolio')}}">
                                     <img src="{{ asset('assets/images/portfolio/coden.png') }}" alt="CODEN Logo"
@@ -62,7 +63,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div data-cue="zoomIn">
+                        <div >
                             <figure class="lift position-relative btn-arrow mb-4">
                                 <a href="{{ route('cassie-hub_portfolio')}}">
                                     <img src="{{ asset('assets/images/portfolio/cassie-hub.png') }}" alt="Cassie Hub Logo"
@@ -108,7 +109,7 @@
             </div>
             <div class="row g-4" data-cue="fadeIn">
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100" data-cue="zoomIn" data-duration="500">
+                    <div class="card card-lift h-100"  data-duration="500">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
@@ -124,7 +125,7 @@
                                         <p class="mb-0">{{ __('website/home.services_ai_solutions_desc') }}</p>
                                     </div>
 
-                                    <a href="{{ route('solutions') }}" class="icon-link icon-link-hover">
+                                    <a href="http://wa.me/+237694113593" class="icon-link icon-link-hover">
                                         {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -138,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100" data-cue="zoomIn" data-duration="800">
+                    <div class="card card-lift h-100"  data-duration="800">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
@@ -172,7 +173,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100" data-cue="zoomIn" data-duration="800">
+                    <div class="card card-lift h-100"  data-duration="800">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
@@ -188,7 +189,7 @@
                                         <p class="mb-0">{{ __('website/home.services_trainings_desc') }}</p>
                                     </div>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <a href="http://wa.me/+237694113593" class="icon-link icon-link-hover">
                                         {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -202,7 +203,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100" data-cue="zoomIn" data-duration="1000">
+                    <div class="card card-lift h-100"  data-duration="1000">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
@@ -220,7 +221,7 @@
                                         </p>
                                     </div>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <a href="http://wa.me/+237694113593" class="icon-link icon-link-hover">
                                         {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -234,7 +235,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100" data-cue="zoomIn" data-duration="1000">
+                    <div class="card card-lift h-100"  data-duration="1000">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
@@ -251,7 +252,7 @@
                                         </p>
                                     </div>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <a href="http://wa.me/+237694113593" class="icon-link icon-link-hover">
                                         {{ __('website/home.services_learn_more') }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -367,7 +368,7 @@
                     </a>
                 </div>
                 <div class="col-xl-6 offset-xl-1 col-lg-6 col-12">
-                    <div class="row g-4" data-cues="slideInUp" data-delay="1000">
+                    <div class="row g-4"  data-delay="1000">
                          <div class="col-lg-6 col-md-6 col-12">
                             <a href="#!">
                                 <div class="rounded-3 card-lift"
@@ -393,7 +394,7 @@
     <section>
         <div class="container" data-cue="fadeIn">
             <div class="row border-top border-bottom">
-                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" data-cue="zoomIn">
+                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" >
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -407,7 +408,7 @@
                         <p class="mb-0">{{ __('website/home.expert_team_desc') }}</p>
                     </div>
                 </div>
-                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" data-cue="zoomIn">
+                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" >
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -421,7 +422,7 @@
                         <p class="mb-0">{{ __('website/home.winning_strategies_desc') }}</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-cue="zoomIn">
+                <div class="col-md-4" >
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"

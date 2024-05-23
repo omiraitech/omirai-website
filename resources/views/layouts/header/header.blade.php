@@ -28,7 +28,7 @@
                         {{-- Portfolio :: END --}}
 
                         {{-- Solutions :: START --}}
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('website/layouts/header.solutions') }}</a>
                             <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
@@ -56,7 +56,7 @@
                                     </div>
                                 </a>
                             </div>
-                        </li>
+                        </li> --}}
                         {{-- Solutions :: END --}}
 
                         {{-- About :: START --}}

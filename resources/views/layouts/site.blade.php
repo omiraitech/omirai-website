@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+{{-- Freshchat Integration --}}    
+ <script
+    src='//eu.fw-cdn.com/12797070/777768.js'
+    chat='true'>
+    </script> 
 <head>
     <meta name="rating" content="general">
     <meta charset="utf-8">
@@ -51,7 +55,19 @@
     <title>Omirai - @yield("title")</title>
     
     @yield("css")
+
+    
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6NEB48DKC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J6NEB48DKC');
+</script>
 
 <body>
     @include('layouts.header.header')
