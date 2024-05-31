@@ -1,7 +1,11 @@
 @extends('layouts.site')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('assets/css/sweetalert2@11.min.css')}}">
+@endsection
+
 @section('title')
-{{ __('website/home.page_title') }}
+    {{ __('website/home.page_title') }}
 @endsection
 @section('body')
     <!--hero start-->
@@ -11,15 +15,17 @@
             <div class="container">
                 <div class="row">
                     {{-- data-cue="zoomIn" --}}
-                    <div class="col-xl-5 col-lg-7 col-12" >
+                    <div class="col-xl-5 col-lg-7 col-12">
                         <div class="text-center text-lg-start">
                             <div class="mb-4 text-white-stable">
                                 <small class="text-uppercase ls-lg">{{ __('website/home.header_heading') }}</small>
-                                <h1 class="mb-3 mt-3 display-3 text-white-stable">{{ __('website/home.header_subheading') }}</h1>
+                                <h1 class="mb-3 mt-3 display-3 text-white-stable">{{ __('website/home.header_subheading') }}
+                                </h1>
                                 <p class="lead mb-0">{{ __('website/home.header_description') }}</p>
                             </div>
 
-                            <a href="#letstalk" class="btn btn-primary">{{ __('website/home.header_start_your_project') }}</a>
+                            <a href="#letstalk"
+                                class="btn btn-primary">{{ __('website/home.header_start_your_project') }}</a>
                         </div>
                     </div>
                 </div>
@@ -34,19 +40,21 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
-                        <small class="text-uppercase ls-md fw-semibold">{{ __('website/home.projects_we_done_heading') }}</small>
+                        <small
+                            class="text-uppercase ls-md fw-semibold">{{ __('website/home.projects_we_done_heading') }}</small>
 
                         <h2 class="my-3">{{ __('website/home.projects_we_done_featured_work') }}</h2>
-                        <p class="mb-0" style="text-align: justify !important;">{{ __('website/home.projects_we_done_featured_work_description') }}</p>
+                        <p class="mb-0" style="text-align: justify !important;">
+                            {{ __('website/home.projects_we_done_featured_work_description') }}</p>
                     </div>
                 </div>
             </div>
             <div class="table-responsive-lg">
                 <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div >
+                        <div>
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a href="{{ route('coden_portfolio')}}">
+                                <a href="{{ route('coden_portfolio') }}">
                                     <img src="{{ asset('assets/images/portfolio/coden.png') }}" alt="CODEN Logo"
                                         class="img-fluid rounded-3" />
 
@@ -57,15 +65,16 @@
                             </figure>
 
                             <h2 class="lh-base h4">
-                                <a href="{{ route('coden_portfolio')}}" class="text-reset">CODEN</a>
+                                <a href="{{ route('coden_portfolio') }}" class="text-reset">CODEN</a>
                             </h2>
-                            <p class="mb-0 text-body-tertiary fw-medium">{{ __('website/home.projects_we_done_business_processes_optimization') }}</p>
+                            <p class="mb-0 text-body-tertiary fw-medium">
+                                {{ __('website/home.projects_we_done_business_processes_optimization') }}</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div >
+                        <div>
                             <figure class="lift position-relative btn-arrow mb-4">
-                                <a href="{{ route('cassie-hub_portfolio')}}">
+                                <a href="{{ route('cassie-hub_portfolio') }}">
                                     <img src="{{ asset('assets/images/portfolio/cassie-hub.png') }}" alt="Cassie Hub Logo"
                                         class="img-fluid rounded-3" />
                                     <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
@@ -75,9 +84,10 @@
                             </figure>
 
                             <h2 class="lh-base h4">
-                                <a href="{{ route('cassie-hub_portfolio')}}" class="text-reset">Cassie Hub</a>
+                                <a href="{{ route('cassie-hub_portfolio') }}" class="text-reset">Cassie Hub</a>
                             </h2>
-                            <p class="mb-0 text-body-tertiary fw-medium">{{ __('website/home.projects_we_done_eCommerce') }}</p>
+                            <p class="mb-0 text-body-tertiary fw-medium">
+                                {{ __('website/home.projects_we_done_eCommerce') }}</p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +95,8 @@
             <div class="row">
                 <div class="col-lg-12" data-cue="fadeIn">
                     <div class="text-center my-5">
-                        <a href="{{ route('portfolio') }}" class="btn btn-primary">{{ __('website/home.Read case studies') }}</a>
+                        <a href="{{ route('portfolio') }}"
+                            class="btn btn-primary">{{ __('website/home.Read case studies') }}</a>
                     </div>
                 </div>
             </div>
@@ -109,15 +120,18 @@
             </div>
             <div class="row g-4" data-cue="fadeIn">
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100"  data-duration="500">
+                    <div class="card card-lift h-100" data-duration="500">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-robot text-primary" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
-                                        <path fill-rule="evenodd" d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120"
+                                        fill="currentColor" class="bi bi-robot text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135" />
+                                        <path fill-rule="evenodd"
+                                            d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                                    </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
@@ -139,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100"  data-duration="800">
+                    <div class="card card-lift h-100" data-duration="800">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
@@ -173,15 +187,18 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100"  data-duration="800">
+                    <div class="card card-lift h-100" data-duration="800">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-warning bg-opacity-10 border border-warning-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mortarboard text-warning" viewBox="0 0 16 16">
-                                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-                                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" class="bi bi-mortarboard text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                        <path
+                                            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                                    </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
@@ -203,15 +220,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100"  data-duration="1000">
+                    <div class="card card-lift h-100" data-duration="1000">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-info bg-opacity-10 border border-info-subtle">
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow text-info" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
-                                      </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" class="bi bi-graph-up-arrow text-info" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+                                    </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
@@ -235,14 +254,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card card-lift h-100"  data-duration="1000">
+                    <div class="card card-lift h-100" data-duration="1000">
                         <div class="card-body p-5">
                             <div class="d-lg-flex">
                                 <div
                                     class="p-3 icon-xl icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bar-chart-line text-primary" viewBox="0 0 16 16">
-                                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" class="bi bi-bar-chart-line text-primary"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                                    </svg>
                                 </div>
                                 <div class="ms-lg-5 mt-4 mt-lg-0">
                                     <div class="mb-4">
@@ -299,7 +321,8 @@
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="{{ asset('assets/images/brand-logo/cassie-hub.svg') }}" alt="Cassie Hub Logo " />
+                                <img src="{{ asset('assets/images/brand-logo/cassie-hub.svg') }}"
+                                    alt="Cassie Hub Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
@@ -309,12 +332,14 @@
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="{{ asset('assets/images/brand-logo/saurellenyoma.svg') }}" alt="Saurelle Nyoma Logo " />
+                                <img src="{{ asset('assets/images/brand-logo/saurellenyoma.svg') }}"
+                                    alt="Saurelle Nyoma Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="{{ asset('assets/images/brand-logo/djasportsacademy.svg') }}" alt="Dja Sports Academy Logo " />
+                                <img src="{{ asset('assets/images/brand-logo/djasportsacademy.svg') }}"
+                                    alt="Dja Sports Academy Logo " />
                             </figure>
                         </div>
 
@@ -330,7 +355,8 @@
                         </div>
                         <div class="col" data-cue="slideInDown">
                             <figure class="text-center mb-0">
-                                <img src="{{ asset('assets/images/brand-logo/sophistique-by-us.svg') }}" alt="Sophistiqué By Us Logo " />
+                                <img src="{{ asset('assets/images/brand-logo/sophistique-by-us.svg') }}"
+                                    alt="Sophistiqué By Us Logo " />
                             </figure>
                         </div>
                         <div class="col" data-cue="slideInDown">
@@ -351,7 +377,8 @@
             <div class="row g-4">
                 <div class="col-xl-5 col-lg-6 col-12" data-cue="slideInLeft">
                     <div class="mb-4">
-                        <small class="text-uppercase ls-md fw-semibold">{{ __('website/home.who_we_are_heading') }}</small>
+                        <small
+                            class="text-uppercase ls-md fw-semibold">{{ __('website/home.who_we_are_heading') }}</small>
                         <h2 class="h1 mt-4 mb-3">{{ __('website/home.who_we_are_subheading') }}</h2>
                         <p class="mb-0">
                             {!! __('website/home.who_we_are_paragraph') !!}
@@ -368,14 +395,14 @@
                     </a>
                 </div>
                 <div class="col-xl-6 offset-xl-1 col-lg-6 col-12">
-                    <div class="row g-4"  data-delay="1000">
-                         <div class="col-lg-6 col-md-6 col-12">
+                    <div class="row g-4" data-delay="1000">
+                        <div class="col-lg-6 col-md-6 col-12">
                             <a href="#!">
                                 <div class="rounded-3 card-lift"
                                     style="background-image: url(assets/images/about-img/omirai.png); background-repeat: no-repeat; height: 386px; background-size: cover">
                                 </div>
                             </a>
-                        </div> 
+                        </div>
                         <div class="col-lg-6 col-md-6 col-12">
                             <a href="#!">
                                 <div class="mb-4 rounded-3 card-lift"
@@ -394,7 +421,7 @@
     <section>
         <div class="container" data-cue="fadeIn">
             <div class="row border-top border-bottom">
-                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" >
+                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -408,7 +435,7 @@
                         <p class="mb-0">{{ __('website/home.expert_team_desc') }}</p>
                     </div>
                 </div>
-                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" >
+                <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -422,7 +449,7 @@
                         <p class="mb-0">{{ __('website/home.winning_strategies_desc') }}</p>
                     </div>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-4">
                     <div class="text-center py-lg-5 p-4">
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -452,7 +479,8 @@
                         <div class="col-lg-6 col-12 order-2" data-cue="slideInLeft">
                             <div class="me-xl-7">
                                 <div class="mb-5">
-                                    <h2 class="h1 mb-4 text-capitalize">{{ __('website/home.start_your_project_heading') }}</h2>
+                                    <h2 class="h1 mb-4 text-capitalize">
+                                        {{ __('website/home.start_your_project_heading') }}</h2>
                                     <p class="mb-0" style="text-align: justify !important;">
                                         {{ __('website/home.start_your_project_paragraph') }}
                                     </p>
@@ -502,50 +530,61 @@
                         <div class="col-lg-6 col-12 order-lg-2" data-cue="slideInRight">
                             <div class="card shadow-sm">
                                 <div class="card-body">
-                                    <form class="row needs-validation g-3" novalidate>
+                                    <form id="estimateCallsForm" class="row needs-validation g-3" novalidate>
+                                        @csrf
                                         <div class="col-lg-12">
                                             <div class="mb-3">
-                                                <h3 class="mb-0">{{ __('website/home.start_your_project_form_heading') }}</h3>
+                                                <h3 class="mb-0">
+                                                    {{ __('website/home.start_your_project_form_heading') }}</h3>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-12">
-                                            <label for="ScheduleFirstnameInput" class="form-label">
+                                            <label for="scheduleFirstnameInput" class="form-label">
                                                 {{ __('forms.first_name') }}
                                                 <span class="text-danger">*</span>
                                             </label>
-                                            <input type="text" class="form-control" id="ScheduleFirstnameInput"
+                                            <input type="text" class="form-control" id="scheduleFirstnameInput" name="scheduleFirstnameInput"
                                                 required />
-                                                @php $first_name = __('forms.first_name');@endphp 
-                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $first_name ]) }}</div>
+                                            @php $first_name = __('forms.first_name');@endphp
+                                            <div class="invalid-feedback" id="scheduleFirstnameInputInvalidFeedback">
+                                                {{ __('validation.required', ['attribute' => $first_name]) }}</div>
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <label for="scheduleLastnameInput" class="form-label">
                                                 {{ __('forms.last_name') }}
                                                 <span class="text-danger">*</span>
                                             </label>
-                                            <input type="text" class="form-control" id="scheduleLastnameInput"
+                                            <input type="text" class="form-control" id="scheduleLastnameInput" name="scheduleLastnameInput"
                                                 required />
-                                                @php $last_name = __('forms.last_name');@endphp 
-                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $last_name ]) }}</div>
+                                            @php $last_name = __('forms.last_name');@endphp
+                                            <div class="invalid-feedback" id="scheduleLastnameInputInvalidFeedback">
+                                                {{ __('validation.required', ['attribute' => $last_name]) }}</div>
                                         </div>
                                         <div class="col-md-12">
                                             <label for="scheduleEmailInput" class="form-label">
                                                 {{ __('forms.email') }}
                                                 <span class="text-danger">*</span>
                                             </label>
-                                            <input type="email" class="form-control" id="scheduleEmailInput"
+                                            <input type="email" class="form-control" id="scheduleEmailInput" name="scheduleEmailInput"
                                                 required />
-                                                 @php $email = __('forms.email');@endphp 
-                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $email ]) }}</div>
+                                            @php $email = __('forms.email');@endphp
+                                            <div class="invalid-feedback" id="scheduleEmailInputInvalidFeedback">
+                                                {{ __('validation.required', ['attribute' => $email]) }}</div>
+                                            <span class="invalid-feedback" id="scheduleEmailInputMessage">{{ __('validation.custom.invalid_email') }}</span>
                                         </div>
                                         <div class="col-md-12">
-                                            <label for="scheduleTextarea" class="form-label">{{ __('forms.message') }}</label>
-                                            <textarea class="form-control" id="scheduleTextarea" placeholder="{{ __('website/home.start_your_project_form_message_placeholder') }}" rows="5" required style="resize: none;"></textarea>
-                                            @php $message = __('forms.message');@endphp 
-                                            <div class="invalid-feedback">{{ __('validation.required', ['attribute' => $message ]) }}</div>
+                                            <label for="scheduleMessage" class="form-label">{{ __('forms.message') }}
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <textarea class="form-control" id="scheduleMessage" name="scheduleMessage"
+                                                placeholder="{{ __('website/home.start_your_project_form_message_placeholder') }}" rows="5" required
+                                                style="resize: none;"></textarea>
+                                            @php $message = __('forms.message');@endphp
+                                            <div class="invalid-feedback" id="scheduleMessageInvalidFeedback">
+                                                {{ __('validation.required', ['attribute' => $message]) }}</div>
                                         </div>
                                         <div class="d-grid">
-                                            <button class="btn btn-primary" type="submit">
+                                            <button class="btn btn-primary" type="submit" id="estimateCallsSubmitBtn">
                                                 {{ __('website/home.start_your_project_form_submit_button') }}</button>
                                         </div>
                                     </form>

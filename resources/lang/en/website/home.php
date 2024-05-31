@@ -61,5 +61,8 @@ return [
     'start_your_project_form_heading' => "Schedule a free estimate call",
     'start_your_project_form_message_placeholder' => "Write to us",
     'start_your_project_form_submit_button' => "Let's work together!",
-
+    'success_title' => "Send Successful",
+    'success_message' => "Message successfully sent. Our team will revert as soon as possible",
+    'error_title' => "Sending Failed",
+    'error_message' => "An error occurred. Please try again",
 ];

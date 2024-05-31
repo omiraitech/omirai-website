@@ -28,4 +28,8 @@ return [
     'datascience_dataanalysis' => "Data Science and Data Analysis",
     'other' => "Other",
     'send' => "Send",
+    'success_title' => "Send Successful",
+    'success_message' => "Message successfully sent. Our team will revert as soon as possible",
+    'error_title' => "Sending Failed",
+    'error_message' => "An error occurred. Please try again",
 ];

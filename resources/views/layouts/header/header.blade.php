@@ -100,8 +100,8 @@
                             @endforeach --}}
                         </div>
                     </div>
-                    <a href="signin.html" class="btn btn-light mx-2">{{ __('website/layouts/header.login') }}</a>
-                    <a href="signup.html" class="btn btn-primary">{{ __('website/layouts/header.create_account') }}</a>
+                    {{-- <a href="signin.html" class="btn btn-light mx-2">{{ __('website/layouts/header.login') }}</a>
+                    <a href="signup.html" class="btn btn-primary">{{ __('website/layouts/header.create_account') }}</a> --}}
                 </div>
                 {{-- Auth & Language Switcher  :: END --}}
             </div>

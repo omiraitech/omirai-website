@@ -3,7 +3,7 @@
     <div class="container">
         <!-- Footer 4 column -->
         <div class="row">
-            <div class="col-xxl-5 col-lg-5 col-md-7">
+            <div class="                col-xxl-5 col-lg-5 col-md-7">
                 <div class="mb-7 mb-xl-0">
                     <div class="mb-4">
                         <a href="#">
@@ -12,18 +12,21 @@
                     </div>
                     <p class="mb-5">{{ __('website/home.header_description') }}</p>
 
-                    <form class="needs-validation" novalidate>
+                    <form id="newsletterForm" class="needs-validation" novalidate>
+                        @csrf
                         <h5 class="mb-3">{{ __('website/layouts/footer.subscribe_newsletter') }}</h5>
                         <div class="row g-2">
                             <div class="col-lg-9 col-8">
                                 <label for="subscribeEmail" class="visually-hidden">Email</label>
-                                <input type="email" class="form-control" id="subscribeEmail"
+                                <input type="email" class="form-control" id="subscribeEmail" name="subscribeEmail"
                                     placeholder="{{ __('forms.email_address') }}" required />
-                                <div class="invalid-feedback">Please enter email.</div>
+                                    @php $email = __('forms.email');@endphp
+                                <div class="invalid-feedback" id="subscribeEmailInvalidFeedback">{{ __('validation.required', ['attribute' => $email]) }}</div>
+                                <span class="invalid-feedback" id="subscribeEmailMessage">{{ __('validation.custom.invalid_email') }}</span>
                             </div>
                             <div class="col-lg-3 col-4">
                                 <div>
-                                    <button type="submit" class="btn btn-primary">{{ __('website/layouts/footer.subscribe_newsletter_button') }}</button>
+                                    <button type="submit" id="newsletterFormSubmitBtn" class="btn btn-primary">{{ __('website/layouts/footer.subscribe_newsletter_button') }}</button>
                                 </div>
                             </div>
                         </div>
@@ -171,28 +174,28 @@
                             type="button" aria-expanded="false" data-bs-toggle="dropdown"
                             aria-label="Toggle theme (auto)">
                             <i class="bi theme-icon-active"></i>
-                            <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                            <span class="visually-hidden bs-theme-text">{{ __('website/layouts/footer.toggle_theme') }}</span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
                             <li>
                                 <button type="button" class="dropdown-item d-flex align-items-center"
                                     data-bs-theme-value="light" aria-pressed="false">
                                     <i class="bi theme-icon bi-sun-fill"></i>
-                                    <span class="ms-2">Light</span>
+                                    <span class="ms-2">{{ __('website/layouts/footer.light_theme') }}</span>
                                 </button>
                             </li>
                             <li>
                                 <button type="button" class="dropdown-item d-flex align-items-center"
                                     data-bs-theme-value="dark" aria-pressed="false">
                                     <i class="bi theme-icon bi-moon-stars-fill"></i>
-                                    <span class="ms-2">Dark</span>
+                                    <span class="ms-2">{{ __('website/layouts/footer.dark_theme') }}</span>
                                 </button>
                             </li>
                             <li>
                                 <button type="button" class="dropdown-item d-flex align-items-center active"
                                     data-bs-theme-value="auto" aria-pressed="true">
                                     <i class="bi theme-icon bi-circle-half"></i>
-                                    <span class="ms-2">Auto</span>
+                                    <span class="ms-2">{{ __('website/layouts/footer.auto_theme') }}</span>
                                 </button>
                             </li>
                         </ul>
@@ -226,3 +229,8 @@
         </div>
     </div>
 </footer>
+@push('js')
+    <script src="{{ asset('assets/js/jquery-3.7.1.min.js')}}"></script>
+    <script src="{{ asset('assets/js/sweetalert2@11.min.js')}}"></script>
+    <script src="{{ asset('storage/assets/js/contact.js')}}"></script>
+@endpush

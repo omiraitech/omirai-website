@@ -34,7 +34,7 @@ return [
     ",
     'success_story1_person_name' => "Ahmadou Bakoura",
     'success_story1_person_role' => "President NSDC",
-    'success_story2' => "We were flabbergasted by the professionalism and the meticulous work done in the achievement of the solution. We had always heard of Artificial Intelligence and Machine Learning and seeing it being implemented was just so awesome. We are really proud and satisfied of the work done. We are convinced of reaching higher heights through our collaboration. Great job.
+    'success_story2' => "Omirai is a more professional startup than some companies with a great reputation. We appreciate their optimism and their ability to always find solutions to problems. After a year of partnership, Cassie Hub finds herself totally satisfied with this collaboration. Our technological service is entirely managed by omirai, and we are guaranteed to be well positioned in the market thanks to the efficiency and quality of their service.
     ",
     'success_story2_person_name' => "Mamekong Emeline",
     'success_story2_person_role' => "CEO Cassie Hub",

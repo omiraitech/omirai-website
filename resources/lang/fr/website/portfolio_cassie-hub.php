@@ -46,7 +46,7 @@ return [
     'services_we_provided_point4' => "La Data Science et Visualisation des Données",
     'services_we_provided_point5' => "Web Design",
     'testimony' => "
-    Nous avons été sidérés par le professionnalisme et le travail minutieux effectué pour parvenir à la solution. Nous avions toujours entendu parler de l’intelligence artificielle et de l’apprentissage automatique et voir leur mise en œuvre était tout simplement génial. Nous sommes vraiment fiers et satisfaits du travail effectué. Nous sommes convaincus d’atteindre des sommets grâce à notre collaboration. Bon travail.
+    Omirai est une startup plus professionnelle que certaines entreprises jouissant d’une grande réputation. Nous apprécions leur optimisme et leur capacité à toujours trouver des solutions aux problèmes. Après un an de partenariat, Cassie Hub se retrouve totalement satisfaite de cette collaboration. Notre service technologique est entièrement géré par omirai, et nous avons la garantie d'être bien positionnés sur le marché grâce à l'efficacité et à la qualité de leur service.
     ",
     'testimony_person_name' => 'Mamekong Emeline',
     'testimony_person_role' => 'PDG Cassie Hub',

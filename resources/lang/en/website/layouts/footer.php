@@ -32,5 +32,15 @@ return [
     'account_profile' => "Profile",
     'copyright' => "Copyright",
     'all_rights_reserved' => "All Rights Reserved",
+    'newsletter_success_title' => "Added successfully",
+    'newsletter_success_message' => "Email successfully saved. Thanks for joining our newsletter",
+    'newsletter_error_title' => "Failed Add",
+    'newsletter_error_message' => "An error occurred. Please try again",
+    'email_exist_title' => "Email Exists",
+    'email_exist_message' => "This email address is already in our newsletter",
+    'toggle_theme' => "Toggle Theme",
+    'light_theme' => "Light",
+    'dark_theme' => "Dark",
+    'auto_theme' => "Auto",
 
 ];

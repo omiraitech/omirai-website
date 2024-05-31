@@ -35,7 +35,7 @@ return [
     ",
     'success_story1_person_name' => "Ahmadou Bakoura",
     'success_story1_person_role' => "Président CODEN",
-    'success_story2' => "Nous avons été sidérés par le professionnalisme et le travail minutieux effectué pour parvenir à la solution. Nous avions toujours entendu parler de l’intelligence artificielle et de l’apprentissage automatique et voir leur mise en œuvre était tout simplement génial. Nous sommes vraiment fiers et satisfaits du travail effectué. Nous sommes convaincus d’atteindre des sommets grâce à notre collaboration. Bon travail.
+    'success_story2' => "Omirai est une startup plus professionnelle que certaines entreprises jouissant d’une grande réputation. Nous apprécions leur optimisme et leur capacité à toujours trouver des solutions aux problèmes. Après un an de partenariat, Cassie Hub se retrouve totalement satisfaite de cette collaboration. Notre service technologique est entièrement géré par omirai, et nous avons la garantie d'être bien positionnés sur le marché grâce à l'efficacité et à la qualité de leur service.
     ",
     'success_story2_person_name' => "Mamekong Emeline",
     'success_story2_person_role' => "PDG Cassie Hub",

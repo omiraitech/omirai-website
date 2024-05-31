@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Lang;
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\EstimateCallController;
+use App\Http\Controllers\NewsletterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +18,6 @@ use Illuminate\Support\Facades\App;
 |
 */
 
-
 Route::get('{locale}', function ($locale) {
     app()->setLocale($locale);
     session()->put('locale', $locale);
@@ -22,15 +25,18 @@ Route::get('{locale}', function ($locale) {
     return redirect()->back();
 });
 
- $locale = App::currentLocale();
-// $route = "/".$locale;
-// Route::redirect('/', $route);
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('welcome');
-Route::get('/', function () {
+
+ $locale = Lang::getLocale();
+ //dd($locale);
+ 
+ Route::get("/", function () {
     return view('welcome');
 })->name('welcome');
+
+
+Route::post('/create/newsletter', [NewsletterController::class, 'store'])->name('create_newsletter');
+Route::post('/create/contactus', [ContactUsController::class, 'store'])->name('create_contactus');
+Route::post('/create/estimate-calls', [EstimateCallController::class, 'store'])->name('create_estimate_calls');
 
 
 Route::prefix($locale)->group(function () {

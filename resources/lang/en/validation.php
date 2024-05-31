@@ -169,10 +169,14 @@ return [
     |
     */
 
+    // 'custom' => [
+    //     'attribute-name' => [
+    //         'rule-name' => 'custom-message',
+    //     ],
+    // ],
+
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
+        'invalid_email' => 'The email address entered is not valid' ,
     ],
 
     /*

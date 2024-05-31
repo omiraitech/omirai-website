@@ -62,4 +62,8 @@ return [
     'start_your_project_form_heading' => "Planifiez un appel d'estimation gratuit",
     'start_your_project_form_message_placeholder' => "Écrivez-nous",
     'start_your_project_form_submit_button' => "Travaillons ensemble!",
+    'success_title' => "Envoi Réussi",
+    'success_message' => "Message envoyé avec succès. Notre équipe reviendra vers vous dans les plus brefs délais",
+    'error_title' => "Envoi Échoué",
+    'error_message' => "Une erreur s'est produite. Veuillez réessayer",
 ];

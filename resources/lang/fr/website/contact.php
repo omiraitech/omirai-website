@@ -28,4 +28,8 @@ return [
     'datascience_dataanalysis' => "Science des Données et Analyse des Données",
     'other' => "Autre",
     'send' => "Envoyer",
+    'success_title' => "Envoi Réussi",
+    'success_message' => "Message envoyé avec succès. Notre équipe reviendra vers vous dans les plus brefs délais",
+    'error_title' => "Envoi Échoué",
+    'error_message' => "Une erreur s'est produite. Veuillez réessayer",
 ];

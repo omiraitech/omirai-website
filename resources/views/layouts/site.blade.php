@@ -13,8 +13,8 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.omiraitech.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="keywords" content="omirai,omiraitech,tech company,ai company,websites,omirai cameroon,omirai cameroun">
-    <meta name="description" content="Omirai is an Artificial Intelligence tech company that provides cutting edge technologies, solutions and services to drive positive change, enhance efficiency and optimize business processes.
+    <meta name="keywords" content="omirai,omiraitech,tech company,ai company,websites,omirai cameroon,omirai cameroun, intelligent solutions">
+    <meta name="description" content="We are an AI tech company that provides cutting edge technologies, solutions and services to drive positive change, enhance efficiency, optimize business processes and growth.
     ">
     <meta name="author" content="Omirai Group">
     <meta name="robots" content="index, follow">
@@ -24,9 +24,10 @@
     <meta property="og:image" content="favicon-32x32.png">
     <meta property="og:title" content="Omirai">
     <meta property="og:description"
-    content="Omirai is an Artificial Intelligence company that provides cutting edge technologies, solutions and services to drive positive change, enhance efficiency and optimize business processes.">
+    content="We are an AI tech company that provides cutting edge technologies, solutions and services to drive positive change, enhance efficiency, optimize business processes and growth.">
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     
     
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -60,14 +61,14 @@
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6NEB48DKC"></script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6NEB48DKC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-J6NEB48DKC');
-</script>
+</script> 
 
 <body>
     @include('layouts.header.header')

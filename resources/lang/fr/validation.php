@@ -14,5 +14,9 @@ return [
     */
     'required' => 'Le champ :attribute est obligatoire.',
 
+    'custom' => [
+        'invalid_email' =>  "L'adresse email saisie n'est pas valide" ,
+    ],
+
 
 ];
